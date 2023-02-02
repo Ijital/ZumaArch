@@ -1,0 +1,3309 @@
+{
+    "states": {
+        "1": "ABIA",
+        "2": "ADAMAWA",
+        "3": "AKWA IBOM",
+        "4": "ANAMBRA",
+        "5": "BAUCHI",
+        "6": "BAYELSA",
+        "7": "BENUE",
+        "8": "BORNO",
+        "9": "CROSS RIVER",
+        "10": "DELTA",
+        "11": "EBONYI",
+        "12": "EDO",
+        "13": "EKITI",
+        "14": "ENUGU",
+        "15": "FCT",
+        "16": "GOMBE",
+        "17": "IMO",
+        "18": "JIGAWA",
+        "19": "KADUNA",
+        "20": "KANO",
+        "21": "KATSINA",
+        "22": "KEBBI",
+        "23": "KOGI",
+        "24": "KWARA",
+        "25": "LAGOS",
+        "26": "NASARAWA",
+        "27": "NIGER",
+        "28": "OGUN",
+        "29": "ONDO",
+        "30": "OSUN",
+        "31": "OYO",
+        "32": "PLATEAU",
+        "33": "RIVERS",
+        "34": "SOKOTO",
+        "35": "TARABA",
+        "36": "YOBE",
+        "37": "ZAMFARA"
+    },
+    "localGovts": {
+        "1": [
+            {
+                "id": "1",
+                "name": "ABA NORTH"
+            },
+            {
+                "id": "2",
+                "name": "ABA SOUTH"
+            },
+            {
+                "id": "3",
+                "name": "AROCHUKWU"
+            },
+            {
+                "id": "4",
+                "name": "BENDE"
+            },
+            {
+                "id": "5",
+                "name": "IKWUANO"
+            },
+            {
+                "id": "6",
+                "name": "ISIALA NGWA NORTH"
+            },
+            {
+                "id": "7",
+                "name": "ISIALA NGWA SOUTH"
+            },
+            {
+                "id": "8",
+                "name": "ISUIKWUATO"
+            },
+            {
+                "id": "9",
+                "name": "OBINGWA"
+            },
+            {
+                "id": "10",
+                "name": "OHAFIA"
+            },
+            {
+                "id": "11",
+                "name": "OSISIOMA"
+            },
+            {
+                "id": "12",
+                "name": "UGWUNAGBO"
+            },
+            {
+                "id": "13",
+                "name": "UKWA EAST"
+            },
+            {
+                "id": "14",
+                "name": "UKWA  WEST"
+            },
+            {
+                "id": "15",
+                "name": "UMUAHIA NORTH"
+            },
+            {
+                "id": "16",
+                "name": "UMUAHIA  SOUTH"
+            },
+            {
+                "id": "17",
+                "name": "UMU - NNEOCHI"
+            }
+        ],
+        "2": [
+            {
+                "id": "18",
+                "name": "DEMSA"
+            },
+            {
+                "id": "19",
+                "name": "FUFORE"
+            },
+            {
+                "id": "20",
+                "name": "GANYE"
+            },
+            {
+                "id": "21",
+                "name": "GIREI"
+            },
+            {
+                "id": "22",
+                "name": "GOMBI"
+            },
+            {
+                "id": "23",
+                "name": "GUYUK"
+            },
+            {
+                "id": "24",
+                "name": "HONG"
+            },
+            {
+                "id": "25",
+                "name": "JADA"
+            },
+            {
+                "id": "26",
+                "name": "LAMURDE"
+            },
+            {
+                "id": "27",
+                "name": "MADAGALI"
+            },
+            {
+                "id": "28",
+                "name": "MAIHA"
+            },
+            {
+                "id": "29",
+                "name": "MAYO - BELWA"
+            },
+            {
+                "id": "30",
+                "name": "MICHIKA"
+            },
+            {
+                "id": "31",
+                "name": "MUBI NORTH"
+            },
+            {
+                "id": "32",
+                "name": "MUBI SOUTH"
+            },
+            {
+                "id": "33",
+                "name": "NUMAN"
+            },
+            {
+                "id": "34",
+                "name": "SHELLENG"
+            },
+            {
+                "id": "35",
+                "name": "SONG"
+            },
+            {
+                "id": "36",
+                "name": "TOUNGO"
+            },
+            {
+                "id": "37",
+                "name": "YOLA NORTH"
+            },
+            {
+                "id": "38",
+                "name": "YOLA SOUTH"
+            }
+        ],
+        "3": [
+            {
+                "id": "39",
+                "name": "ABAK"
+            },
+            {
+                "id": "40",
+                "name": "EASTERN OBOLO"
+            },
+            {
+                "id": "41",
+                "name": "EKET"
+            },
+            {
+                "id": "42",
+                "name": "ESIT EKET (UQUO)"
+            },
+            {
+                "id": "43",
+                "name": "ESSIEN UDIM"
+            },
+            {
+                "id": "44",
+                "name": "ETIM EKPO"
+            },
+            {
+                "id": "45",
+                "name": "ETINAN"
+            },
+            {
+                "id": "46",
+                "name": "IBENO"
+            },
+            {
+                "id": "47",
+                "name": "IBESIKPO ASUTAN"
+            },
+            {
+                "id": "48",
+                "name": "IBIONO IBOM"
+            },
+            {
+                "id": "49",
+                "name": "IKA"
+            },
+            {
+                "id": "50",
+                "name": "IKONO"
+            },
+            {
+                "id": "51",
+                "name": "IKOT ABASI"
+            },
+            {
+                "id": "52",
+                "name": "IKOT EKPENE"
+            },
+            {
+                "id": "53",
+                "name": "INI"
+            },
+            {
+                "id": "54",
+                "name": "ITU"
+            },
+            {
+                "id": "55",
+                "name": "MBO"
+            },
+            {
+                "id": "56",
+                "name": "MKPAT ENIN"
+            },
+            {
+                "id": "57",
+                "name": "NSIT ATAI"
+            },
+            {
+                "id": "58",
+                "name": "NSIT IBOM"
+            },
+            {
+                "id": "59",
+                "name": "NSIT UBIUM"
+            },
+            {
+                "id": "60",
+                "name": "OBOT AKARA"
+            },
+            {
+                "id": "61",
+                "name": "OKOBO"
+            },
+            {
+                "id": "62",
+                "name": "ONNA"
+            },
+            {
+                "id": "63",
+                "name": "ORON"
+            },
+            {
+                "id": "64",
+                "name": "ORUK ANAM"
+            },
+            {
+                "id": "65",
+                "name": "UDUNG UKO"
+            },
+            {
+                "id": "66",
+                "name": "UKANAFUN"
+            },
+            {
+                "id": "67",
+                "name": "URUAN"
+            },
+            {
+                "id": "68",
+                "name": "URUE OFFONG\/ORUKO"
+            },
+            {
+                "id": "69",
+                "name": "UYO"
+            }
+        ],
+        "4": [
+            {
+                "id": "70",
+                "name": "AGUATA"
+            },
+            {
+                "id": "71",
+                "name": "AYAMELUM"
+            },
+            {
+                "id": "72",
+                "name": "ANAMBRA EAST"
+            },
+            {
+                "id": "73",
+                "name": "ANAMBRA WEST"
+            },
+            {
+                "id": "74",
+                "name": "ANAOCHA"
+            },
+            {
+                "id": "75",
+                "name": "AWKA NORTH"
+            },
+            {
+                "id": "76",
+                "name": "AWKA SOUTH"
+            },
+            {
+                "id": "77",
+                "name": "DUNUKOFIA"
+            },
+            {
+                "id": "78",
+                "name": "EKWUSIGO"
+            },
+            {
+                "id": "79",
+                "name": "IDEMILI NORTH"
+            },
+            {
+                "id": "80",
+                "name": "IDEMILI-SOUTH"
+            },
+            {
+                "id": "81",
+                "name": "IHALA"
+            },
+            {
+                "id": "82",
+                "name": "NJIKOKA"
+            },
+            {
+                "id": "83",
+                "name": "NNEWI NORTH"
+            },
+            {
+                "id": "84",
+                "name": "NNEWI SOUTH"
+            },
+            {
+                "id": "85",
+                "name": "OGBARU"
+            },
+            {
+                "id": "86",
+                "name": "ONITSHA-NORTH"
+            },
+            {
+                "id": "87",
+                "name": "ONITSHA -SOUTH"
+            },
+            {
+                "id": "88",
+                "name": "ORUMBA NORTH"
+            },
+            {
+                "id": "89",
+                "name": "ORUMBA  SOUTH"
+            },
+            {
+                "id": "90",
+                "name": "OYI"
+            }
+        ],
+        "5": [
+            {
+                "id": "91",
+                "name": "ALKALERI"
+            },
+            {
+                "id": "92",
+                "name": "BAUCHI"
+            },
+            {
+                "id": "93",
+                "name": "BOGORO"
+            },
+            {
+                "id": "94",
+                "name": "DAMBAM"
+            },
+            {
+                "id": "95",
+                "name": "DARAZO"
+            },
+            {
+                "id": "96",
+                "name": "DASS"
+            },
+            {
+                "id": "97",
+                "name": "GAMAWA"
+            },
+            {
+                "id": "98",
+                "name": "GANJUWA"
+            },
+            {
+                "id": "99",
+                "name": "GIADE"
+            },
+            {
+                "id": "100",
+                "name": "ITAS\/GADAU"
+            },
+            {
+                "id": "101",
+                "name": "JAMA'ARE"
+            },
+            {
+                "id": "102",
+                "name": "KATAGUM"
+            },
+            {
+                "id": "103",
+                "name": "KIRFI"
+            },
+            {
+                "id": "104",
+                "name": "MISAU"
+            },
+            {
+                "id": "105",
+                "name": "NINGI"
+            },
+            {
+                "id": "106",
+                "name": "SHIRA"
+            },
+            {
+                "id": "107",
+                "name": "TAFAWA BALEWA"
+            },
+            {
+                "id": "108",
+                "name": "TORO"
+            },
+            {
+                "id": "109",
+                "name": "WARJI"
+            },
+            {
+                "id": "110",
+                "name": "ZAKI"
+            }
+        ],
+        "6": [
+            {
+                "id": "111",
+                "name": "BRASS"
+            },
+            {
+                "id": "112",
+                "name": "EKEREMOR"
+            },
+            {
+                "id": "113",
+                "name": "KOLOKUMA\/OPOKUMA"
+            },
+            {
+                "id": "114",
+                "name": "NEMBE"
+            },
+            {
+                "id": "115",
+                "name": "OGBIA"
+            },
+            {
+                "id": "116",
+                "name": "SAGBAMA"
+            },
+            {
+                "id": "117",
+                "name": "SOUTHERN IJAW"
+            },
+            {
+                "id": "118",
+                "name": "YENAGOA"
+            }
+        ],
+        "7": [
+            {
+                "id": "119",
+                "name": "ADO"
+            },
+            {
+                "id": "120",
+                "name": "AGATU"
+            },
+            {
+                "id": "121",
+                "name": "APA"
+            },
+            {
+                "id": "122",
+                "name": "BURUKU"
+            },
+            {
+                "id": "123",
+                "name": "GBOKO"
+            },
+            {
+                "id": "124",
+                "name": "GUMA"
+            },
+            {
+                "id": "125",
+                "name": "GWER EAST"
+            },
+            {
+                "id": "126",
+                "name": "GWER WEST"
+            },
+            {
+                "id": "127",
+                "name": "KATSINA-ALA"
+            },
+            {
+                "id": "128",
+                "name": "KONSHISHA"
+            },
+            {
+                "id": "129",
+                "name": "KWANDE"
+            },
+            {
+                "id": "130",
+                "name": "LOGO"
+            },
+            {
+                "id": "131",
+                "name": "MAKURDI"
+            },
+            {
+                "id": "132",
+                "name": "OBI"
+            },
+            {
+                "id": "133",
+                "name": "OGBADIBO"
+            },
+            {
+                "id": "134",
+                "name": "OJU"
+            },
+            {
+                "id": "135",
+                "name": "OHIMINI"
+            },
+            {
+                "id": "136",
+                "name": "OKPOKWU"
+            },
+            {
+                "id": "137",
+                "name": "OTUKPO"
+            },
+            {
+                "id": "138",
+                "name": "TARKA"
+            },
+            {
+                "id": "139",
+                "name": "UKUM"
+            },
+            {
+                "id": "140",
+                "name": "USHONGO"
+            },
+            {
+                "id": "141",
+                "name": "VANDEIKYA"
+            }
+        ],
+        "8": [
+            {
+                "id": "142",
+                "name": "ABADAM"
+            },
+            {
+                "id": "143",
+                "name": "ASKIRA \/ UBA"
+            },
+            {
+                "id": "144",
+                "name": "BAMA"
+            },
+            {
+                "id": "145",
+                "name": "BAYO"
+            },
+            {
+                "id": "146",
+                "name": "BIU"
+            },
+            {
+                "id": "147",
+                "name": "CHIBOK"
+            },
+            {
+                "id": "148",
+                "name": "DAMBOA"
+            },
+            {
+                "id": "149",
+                "name": "DIKWA"
+            },
+            {
+                "id": "150",
+                "name": "GUBIO"
+            },
+            {
+                "id": "151",
+                "name": "GUZAMALA"
+            },
+            {
+                "id": "152",
+                "name": "GWOZA"
+            },
+            {
+                "id": "153",
+                "name": "HAWUL"
+            },
+            {
+                "id": "154",
+                "name": "JERE"
+            },
+            {
+                "id": "155",
+                "name": "KAGA"
+            },
+            {
+                "id": "156",
+                "name": "KALA BALGE"
+            },
+            {
+                "id": "157",
+                "name": "KONDUGA"
+            },
+            {
+                "id": "158",
+                "name": "KUKAWA"
+            },
+            {
+                "id": "159",
+                "name": "KWAYA \/ KUSAR"
+            },
+            {
+                "id": "160",
+                "name": "MAFA"
+            },
+            {
+                "id": "161",
+                "name": "MAGUMERI"
+            },
+            {
+                "id": "162",
+                "name": "MAIDUGURI M. C."
+            },
+            {
+                "id": "163",
+                "name": "MARTE"
+            },
+            {
+                "id": "164",
+                "name": "MOBBAR"
+            },
+            {
+                "id": "165",
+                "name": "MONGUNO"
+            },
+            {
+                "id": "166",
+                "name": "NGALA"
+            },
+            {
+                "id": "167",
+                "name": "NGANZAI"
+            },
+            {
+                "id": "168",
+                "name": "SHANI"
+            }
+        ],
+        "9": [
+            {
+                "id": "169",
+                "name": "ABI"
+            },
+            {
+                "id": "170",
+                "name": "AKAMKPA"
+            },
+            {
+                "id": "171",
+                "name": "AKPABUYO"
+            },
+            {
+                "id": "172",
+                "name": "BAKASSI"
+            },
+            {
+                "id": "173",
+                "name": "BEKWARRA"
+            },
+            {
+                "id": "174",
+                "name": "BIASE"
+            },
+            {
+                "id": "175",
+                "name": "BOKI"
+            },
+            {
+                "id": "176",
+                "name": "CALABAR MUNICIPALITY"
+            },
+            {
+                "id": "177",
+                "name": "CALABAR SOUTH"
+            },
+            {
+                "id": "178",
+                "name": "ETUNG"
+            },
+            {
+                "id": "179",
+                "name": "IKOM"
+            },
+            {
+                "id": "180",
+                "name": "OBANLIKU"
+            },
+            {
+                "id": "181",
+                "name": "OBUBRA"
+            },
+            {
+                "id": "182",
+                "name": "OBUDU"
+            },
+            {
+                "id": "183",
+                "name": "ODUKPANI"
+            },
+            {
+                "id": "184",
+                "name": "OGOJA"
+            },
+            {
+                "id": "185",
+                "name": "YAKURR"
+            },
+            {
+                "id": "186",
+                "name": "YALA"
+            }
+        ],
+        "10": [
+            {
+                "id": "187",
+                "name": "ANIOCHA NORTH"
+            },
+            {
+                "id": "188",
+                "name": "ANIOCHA - SOUTH"
+            },
+            {
+                "id": "189",
+                "name": "BOMADI"
+            },
+            {
+                "id": "190",
+                "name": "BURUTU"
+            },
+            {
+                "id": "191",
+                "name": "ETHIOPE  EAST"
+            },
+            {
+                "id": "192",
+                "name": "ETHIOPE  WEST"
+            },
+            {
+                "id": "193",
+                "name": "IKA NORTH- EAST"
+            },
+            {
+                "id": "194",
+                "name": "IKA - SOUTH"
+            },
+            {
+                "id": "195",
+                "name": "ISOKO NORTH"
+            },
+            {
+                "id": "196",
+                "name": "ISOKO SOUTH"
+            },
+            {
+                "id": "197",
+                "name": "NDOKWA EAST"
+            },
+            {
+                "id": "198",
+                "name": "NDOKWA WEST"
+            },
+            {
+                "id": "199",
+                "name": "OKPE"
+            },
+            {
+                "id": "200",
+                "name": "OSHIMILI - NORTH"
+            },
+            {
+                "id": "201",
+                "name": "OSHIMILI - SOUTH"
+            },
+            {
+                "id": "202",
+                "name": "PATANI"
+            },
+            {
+                "id": "203",
+                "name": "SAPELE"
+            },
+            {
+                "id": "204",
+                "name": "UDU"
+            },
+            {
+                "id": "205",
+                "name": "UGHELLI NORTH"
+            },
+            {
+                "id": "206",
+                "name": "UGHELLI SOUTH"
+            },
+            {
+                "id": "207",
+                "name": "UKWUANI"
+            },
+            {
+                "id": "208",
+                "name": "UVWIE"
+            },
+            {
+                "id": "209",
+                "name": "WARRI  NORTH"
+            },
+            {
+                "id": "210",
+                "name": "WARRI SOUTH"
+            },
+            {
+                "id": "211",
+                "name": "WARRI SOUTH  WEST"
+            }
+        ],
+        "11": [
+            {
+                "id": "212",
+                "name": "ABAKALIKI"
+            },
+            {
+                "id": "213",
+                "name": "AFIKPO NORTH"
+            },
+            {
+                "id": "214",
+                "name": "AFIKPO  SOUTH"
+            },
+            {
+                "id": "215",
+                "name": "EBONYI"
+            },
+            {
+                "id": "216",
+                "name": "EZZA NORTH"
+            },
+            {
+                "id": "217",
+                "name": "EZZA SOUTH"
+            },
+            {
+                "id": "218",
+                "name": "IKWO"
+            },
+            {
+                "id": "219",
+                "name": "ISHIELU"
+            },
+            {
+                "id": "220",
+                "name": "IVO"
+            },
+            {
+                "id": "221",
+                "name": "IZZI"
+            },
+            {
+                "id": "222",
+                "name": "OHAOZARA"
+            },
+            {
+                "id": "223",
+                "name": "OHAUKWU"
+            },
+            {
+                "id": "224",
+                "name": "ONICHA"
+            }
+        ],
+        "12": [
+            {
+                "id": "225",
+                "name": "AKOKO EDO"
+            },
+            {
+                "id": "226",
+                "name": "EGOR"
+            },
+            {
+                "id": "227",
+                "name": "ESAN CENTRAL"
+            },
+            {
+                "id": "228",
+                "name": "ESAN NORTH EAST"
+            },
+            {
+                "id": "229",
+                "name": "ESAN SOUTH EAST"
+            },
+            {
+                "id": "230",
+                "name": "ESAN WEST"
+            },
+            {
+                "id": "231",
+                "name": "ETSAKO CENTRAL"
+            },
+            {
+                "id": "232",
+                "name": "ETSAKO EAST"
+            },
+            {
+                "id": "233",
+                "name": "ETSAKO  WEST"
+            },
+            {
+                "id": "234",
+                "name": "IGUEBEN"
+            },
+            {
+                "id": "235",
+                "name": "IKPOBA\/OKHA"
+            },
+            {
+                "id": "236",
+                "name": "OREDO"
+            },
+            {
+                "id": "237",
+                "name": "ORHIONMWON"
+            },
+            {
+                "id": "238",
+                "name": "OVIA NORTH EAST"
+            },
+            {
+                "id": "239",
+                "name": "OVIA SOUTH WEST"
+            },
+            {
+                "id": "240",
+                "name": "OWAN EAST"
+            },
+            {
+                "id": "241",
+                "name": "OWAN WEST"
+            },
+            {
+                "id": "242",
+                "name": "UHUNMWODE"
+            }
+        ],
+        "13": [
+            {
+                "id": "243",
+                "name": "ADO EKITI"
+            },
+            {
+                "id": "244",
+                "name": "EFON"
+            },
+            {
+                "id": "245",
+                "name": "EKITI EAST"
+            },
+            {
+                "id": "246",
+                "name": "EKITI WEST"
+            },
+            {
+                "id": "247",
+                "name": "EKITI SOUTH WEST"
+            },
+            {
+                "id": "248",
+                "name": "EMURE"
+            },
+            {
+                "id": "249",
+                "name": "GBONYIN"
+            },
+            {
+                "id": "250",
+                "name": "IDO \/ OSI"
+            },
+            {
+                "id": "251",
+                "name": "IJERO"
+            },
+            {
+                "id": "252",
+                "name": "IKERE"
+            },
+            {
+                "id": "253",
+                "name": "IKOLE"
+            },
+            {
+                "id": "254",
+                "name": "ILEJEMEJE"
+            },
+            {
+                "id": "255",
+                "name": "IREPODUN \/ IFELODUN"
+            },
+            {
+                "id": "256",
+                "name": "ISE \/ ORUN"
+            },
+            {
+                "id": "257",
+                "name": "MOBA"
+            },
+            {
+                "id": "258",
+                "name": "OYE"
+            }
+        ],
+        "14": [
+            {
+                "id": "259",
+                "name": "ANINRI"
+            },
+            {
+                "id": "260",
+                "name": "AWGU"
+            },
+            {
+                "id": "261",
+                "name": "ENUGU EAST"
+            },
+            {
+                "id": "262",
+                "name": "ENUGU NORTH"
+            },
+            {
+                "id": "263",
+                "name": "ENUGU SOUTH"
+            },
+            {
+                "id": "264",
+                "name": "EZEAGU"
+            },
+            {
+                "id": "265",
+                "name": "IGBO ETITI"
+            },
+            {
+                "id": "266",
+                "name": "IGBO EZE NORTH"
+            },
+            {
+                "id": "267",
+                "name": "IGBO EZE SOUTH"
+            },
+            {
+                "id": "268",
+                "name": "ISI UZO"
+            },
+            {
+                "id": "269",
+                "name": "NKANU EAST"
+            },
+            {
+                "id": "270",
+                "name": "NKANU WEST"
+            },
+            {
+                "id": "271",
+                "name": "NSUKKA"
+            },
+            {
+                "id": "272",
+                "name": "OJI-RIVER"
+            },
+            {
+                "id": "273",
+                "name": "UDENU"
+            },
+            {
+                "id": "274",
+                "name": "UDI"
+            },
+            {
+                "id": "275",
+                "name": "UZO-UWANI"
+            }
+        ],
+        "15": [
+            {
+                "id": "276",
+                "name": "ABAJI"
+            },
+            {
+                "id": "277",
+                "name": "BWARI"
+            },
+            {
+                "id": "278",
+                "name": "GWAGWALADA"
+            },
+            {
+                "id": "279",
+                "name": "KUJE"
+            },
+            {
+                "id": "280",
+                "name": "KWALI"
+            },
+            {
+                "id": "281",
+                "name": "MUNICIPAL"
+            }
+        ],
+        "16": [
+            {
+                "id": "282",
+                "name": "AKKO"
+            },
+            {
+                "id": "283",
+                "name": "BALANGA"
+            },
+            {
+                "id": "284",
+                "name": "BILLIRI"
+            },
+            {
+                "id": "285",
+                "name": "DUKKU"
+            },
+            {
+                "id": "286",
+                "name": "FUNAKAYE"
+            },
+            {
+                "id": "287",
+                "name": "GOMBE"
+            },
+            {
+                "id": "288",
+                "name": "KALTUNGO"
+            },
+            {
+                "id": "289",
+                "name": "KWAMI"
+            },
+            {
+                "id": "290",
+                "name": "NAFADA"
+            },
+            {
+                "id": "291",
+                "name": "SHONGOM"
+            },
+            {
+                "id": "292",
+                "name": "YALMALTU\/ DEBA"
+            }
+        ],
+        "17": [
+            {
+                "id": "293",
+                "name": "ABOH MBAISE"
+            },
+            {
+                "id": "294",
+                "name": "AHIAZU MBAISE"
+            },
+            {
+                "id": "295",
+                "name": "EHIME MBANO"
+            },
+            {
+                "id": "296",
+                "name": "EZINIHITTE MBAISE"
+            },
+            {
+                "id": "297",
+                "name": "IDEATO NORTH"
+            },
+            {
+                "id": "298",
+                "name": "IDEATO SOUTH"
+            },
+            {
+                "id": "299",
+                "name": "IHITTE UBOMA"
+            },
+            {
+                "id": "300",
+                "name": "IKEDURU"
+            },
+            {
+                "id": "301",
+                "name": "ISIALA MBANO"
+            },
+            {
+                "id": "302",
+                "name": "ISU"
+            },
+            {
+                "id": "303",
+                "name": "MBAITOLI"
+            },
+            {
+                "id": "304",
+                "name": "NGOR OKPALA"
+            },
+            {
+                "id": "305",
+                "name": "NJABA"
+            },
+            {
+                "id": "306",
+                "name": "NKWERRE"
+            },
+            {
+                "id": "307",
+                "name": "NWANGELE"
+            },
+            {
+                "id": "308",
+                "name": "OBOWO"
+            },
+            {
+                "id": "309",
+                "name": "OGUTA"
+            },
+            {
+                "id": "310",
+                "name": "OHAJI EGBEMA"
+            },
+            {
+                "id": "311",
+                "name": "OKIGWE"
+            },
+            {
+                "id": "312",
+                "name": "ONUIMO"
+            },
+            {
+                "id": "313",
+                "name": "ORLU"
+            },
+            {
+                "id": "314",
+                "name": "ORSU"
+            },
+            {
+                "id": "315",
+                "name": "ORU EAST"
+            },
+            {
+                "id": "316",
+                "name": "ORU WEST"
+            },
+            {
+                "id": "317",
+                "name": "OWERRI MUNICIPAL"
+            },
+            {
+                "id": "318",
+                "name": "OWERRI NORTH"
+            },
+            {
+                "id": "319",
+                "name": "OWERRI WEST"
+            }
+        ],
+        "18": [
+            {
+                "id": "320",
+                "name": "AUYO"
+            },
+            {
+                "id": "321",
+                "name": "BABURA"
+            },
+            {
+                "id": "322",
+                "name": "BIRNIN KUDU"
+            },
+            {
+                "id": "323",
+                "name": "BIRNIWA"
+            },
+            {
+                "id": "324",
+                "name": "BUJI"
+            },
+            {
+                "id": "325",
+                "name": "DUTSE"
+            },
+            {
+                "id": "326",
+                "name": "GARKI"
+            },
+            {
+                "id": "327",
+                "name": "GAGARAWA"
+            },
+            {
+                "id": "328",
+                "name": "GUMEL"
+            },
+            {
+                "id": "329",
+                "name": "GURI"
+            },
+            {
+                "id": "330",
+                "name": "GWARAM"
+            },
+            {
+                "id": "331",
+                "name": "GWIWA"
+            },
+            {
+                "id": "332",
+                "name": "HADEJIA"
+            },
+            {
+                "id": "333",
+                "name": "JAHUN"
+            },
+            {
+                "id": "334",
+                "name": "KAFIN HAUSA"
+            },
+            {
+                "id": "335",
+                "name": "KAUGAMA"
+            },
+            {
+                "id": "336",
+                "name": "KAZAURE"
+            },
+            {
+                "id": "337",
+                "name": "KIRIKA SAMMA"
+            },
+            {
+                "id": "338",
+                "name": "KIYAWA"
+            },
+            {
+                "id": "339",
+                "name": "MAIGATARI"
+            },
+            {
+                "id": "340",
+                "name": "MALAM MADORI"
+            },
+            {
+                "id": "341",
+                "name": "MIGA"
+            },
+            {
+                "id": "342",
+                "name": "RINGIM"
+            },
+            {
+                "id": "343",
+                "name": "RONI"
+            },
+            {
+                "id": "344",
+                "name": "SULE-TANKARKAR"
+            },
+            {
+                "id": "345",
+                "name": "TAURA"
+            },
+            {
+                "id": "346",
+                "name": "YANKWASHI"
+            }
+        ],
+        "19": [
+            {
+                "id": "347",
+                "name": "BIRNIN GWARI"
+            },
+            {
+                "id": "348",
+                "name": "CHIKUN"
+            },
+            {
+                "id": "349",
+                "name": "GIWA"
+            },
+            {
+                "id": "350",
+                "name": "IGABI"
+            },
+            {
+                "id": "351",
+                "name": "IKARA"
+            },
+            {
+                "id": "352",
+                "name": "JABA"
+            },
+            {
+                "id": "353",
+                "name": "JEMA'A"
+            },
+            {
+                "id": "354",
+                "name": "KACHIA"
+            },
+            {
+                "id": "355",
+                "name": "KADUNA NORTH"
+            },
+            {
+                "id": "356",
+                "name": "KADUNA SOUTH"
+            },
+            {
+                "id": "357",
+                "name": "KAGARKO"
+            },
+            {
+                "id": "358",
+                "name": "KAJURU"
+            },
+            {
+                "id": "359",
+                "name": "KAURA"
+            },
+            {
+                "id": "360",
+                "name": "KAURU"
+            },
+            {
+                "id": "361",
+                "name": "KUBAU"
+            },
+            {
+                "id": "362",
+                "name": "KUDAN"
+            },
+            {
+                "id": "363",
+                "name": "LERE"
+            },
+            {
+                "id": "364",
+                "name": "MAKARFI"
+            },
+            {
+                "id": "365",
+                "name": "SABON GARI"
+            },
+            {
+                "id": "366",
+                "name": "SANGA"
+            },
+            {
+                "id": "367",
+                "name": "SOBA"
+            },
+            {
+                "id": "368",
+                "name": "ZANGON KATAF"
+            },
+            {
+                "id": "369",
+                "name": "ZARIA"
+            }
+        ],
+        "20": [
+            {
+                "id": "370",
+                "name": "AJINGI"
+            },
+            {
+                "id": "371",
+                "name": "ALBASU"
+            },
+            {
+                "id": "372",
+                "name": "BAGWAI"
+            },
+            {
+                "id": "373",
+                "name": "BEBEJI"
+            },
+            {
+                "id": "374",
+                "name": "BICHI"
+            },
+            {
+                "id": "375",
+                "name": "BUNKURE"
+            },
+            {
+                "id": "376",
+                "name": "DALA"
+            },
+            {
+                "id": "377",
+                "name": "DANBATA"
+            },
+            {
+                "id": "378",
+                "name": "DAWAKI KUDU"
+            },
+            {
+                "id": "379",
+                "name": "DAWAKI TOFA"
+            },
+            {
+                "id": "380",
+                "name": "DOGUWA"
+            },
+            {
+                "id": "381",
+                "name": "FAGGE"
+            },
+            {
+                "id": "382",
+                "name": "GABASAWA"
+            },
+            {
+                "id": "383",
+                "name": "GARKO"
+            },
+            {
+                "id": "384",
+                "name": "GARUN MALAM"
+            },
+            {
+                "id": "385",
+                "name": "GAYA"
+            },
+            {
+                "id": "386",
+                "name": "GEZAWA"
+            },
+            {
+                "id": "387",
+                "name": "GWALE"
+            },
+            {
+                "id": "388",
+                "name": "GWARZO"
+            },
+            {
+                "id": "389",
+                "name": "KABO"
+            },
+            {
+                "id": "390",
+                "name": "KANO MUNICIPAL"
+            },
+            {
+                "id": "391",
+                "name": "KARAYE"
+            },
+            {
+                "id": "392",
+                "name": "KIBIYA"
+            },
+            {
+                "id": "393",
+                "name": "KIRU"
+            },
+            {
+                "id": "394",
+                "name": "KUMBOTSO"
+            },
+            {
+                "id": "395",
+                "name": "KUNCHI"
+            },
+            {
+                "id": "396",
+                "name": "KURA"
+            },
+            {
+                "id": "397",
+                "name": "MADOBI"
+            },
+            {
+                "id": "398",
+                "name": "MAKODA"
+            },
+            {
+                "id": "399",
+                "name": "MINJIBIR"
+            },
+            {
+                "id": "400",
+                "name": "NASARAWA"
+            },
+            {
+                "id": "401",
+                "name": "RANO"
+            },
+            {
+                "id": "402",
+                "name": "RIMIN GADO"
+            },
+            {
+                "id": "403",
+                "name": "ROGO"
+            },
+            {
+                "id": "404",
+                "name": "SHANONO"
+            },
+            {
+                "id": "405",
+                "name": "SUMAILA"
+            },
+            {
+                "id": "406",
+                "name": "TAKAI"
+            },
+            {
+                "id": "407",
+                "name": "TARAUNI"
+            },
+            {
+                "id": "408",
+                "name": "TOFA"
+            },
+            {
+                "id": "409",
+                "name": "TSANYAWA"
+            },
+            {
+                "id": "410",
+                "name": "TUDUN WADA"
+            },
+            {
+                "id": "411",
+                "name": "UNGOGO"
+            },
+            {
+                "id": "412",
+                "name": "WARAWA"
+            },
+            {
+                "id": "413",
+                "name": "WUDIL"
+            }
+        ],
+        "21": [
+            {
+                "id": "414",
+                "name": "BAKORI"
+            },
+            {
+                "id": "415",
+                "name": "BATAGARAWA"
+            },
+            {
+                "id": "416",
+                "name": "BATSARI"
+            },
+            {
+                "id": "417",
+                "name": "BAURE"
+            },
+            {
+                "id": "418",
+                "name": "BINDAWA"
+            },
+            {
+                "id": "419",
+                "name": "CHARANCHI"
+            },
+            {
+                "id": "420",
+                "name": "DANDUME"
+            },
+            {
+                "id": "421",
+                "name": "DANJA"
+            },
+            {
+                "id": "422",
+                "name": "DAN MUSA"
+            },
+            {
+                "id": "423",
+                "name": "DAURA"
+            },
+            {
+                "id": "424",
+                "name": "DUTSI"
+            },
+            {
+                "id": "425",
+                "name": "DUTSIN-MA"
+            },
+            {
+                "id": "426",
+                "name": "FASKARI"
+            },
+            {
+                "id": "427",
+                "name": "FUNTUA"
+            },
+            {
+                "id": "428",
+                "name": "INGAWA"
+            },
+            {
+                "id": "429",
+                "name": "JIBIA"
+            },
+            {
+                "id": "430",
+                "name": "KAFUR"
+            },
+            {
+                "id": "431",
+                "name": "KAITA"
+            },
+            {
+                "id": "432",
+                "name": "KANKARA"
+            },
+            {
+                "id": "433",
+                "name": "KANKIA"
+            },
+            {
+                "id": "434",
+                "name": "KATSINA"
+            },
+            {
+                "id": "435",
+                "name": "KURFI"
+            },
+            {
+                "id": "436",
+                "name": "KUSADA"
+            },
+            {
+                "id": "437",
+                "name": "MAI'ADUA"
+            },
+            {
+                "id": "438",
+                "name": "MALUFASHI"
+            },
+            {
+                "id": "439",
+                "name": "MANI"
+            },
+            {
+                "id": "440",
+                "name": "MASHI"
+            },
+            {
+                "id": "441",
+                "name": "MATAZU"
+            },
+            {
+                "id": "442",
+                "name": "MUSAWA"
+            },
+            {
+                "id": "443",
+                "name": "RIMI"
+            },
+            {
+                "id": "444",
+                "name": "SABUWA"
+            },
+            {
+                "id": "445",
+                "name": "SAFANA"
+            },
+            {
+                "id": "446",
+                "name": "SANDAMU"
+            },
+            {
+                "id": "447",
+                "name": "ZANGO"
+            }
+        ],
+        "22": [
+            {
+                "id": "448",
+                "name": "ALIERO"
+            },
+            {
+                "id": "449",
+                "name": "AREWA"
+            },
+            {
+                "id": "450",
+                "name": "ARGUNGU"
+            },
+            {
+                "id": "451",
+                "name": "AUGIE"
+            },
+            {
+                "id": "452",
+                "name": "BAGUDO"
+            },
+            {
+                "id": "453",
+                "name": "BIRNIN KEBBI"
+            },
+            {
+                "id": "454",
+                "name": "BUNZA"
+            },
+            {
+                "id": "455",
+                "name": "DANDI"
+            },
+            {
+                "id": "456",
+                "name": "FAKAI"
+            },
+            {
+                "id": "457",
+                "name": "GWANDU"
+            },
+            {
+                "id": "458",
+                "name": "JEGA"
+            },
+            {
+                "id": "459",
+                "name": "KALGO"
+            },
+            {
+                "id": "460",
+                "name": "KOKO\/BESSE"
+            },
+            {
+                "id": "461",
+                "name": "MAIYAMA"
+            },
+            {
+                "id": "462",
+                "name": "NGASKI"
+            },
+            {
+                "id": "463",
+                "name": "SAKABA"
+            },
+            {
+                "id": "464",
+                "name": "SHANGA"
+            },
+            {
+                "id": "465",
+                "name": "SURU"
+            },
+            {
+                "id": "466",
+                "name": "WASAGU\/DANKO"
+            },
+            {
+                "id": "467",
+                "name": "YAURI"
+            },
+            {
+                "id": "468",
+                "name": "ZURU"
+            }
+        ],
+        "23": [
+            {
+                "id": "469",
+                "name": "ADAVI"
+            },
+            {
+                "id": "470",
+                "name": "AJAOKUTA"
+            },
+            {
+                "id": "471",
+                "name": "ANKPA"
+            },
+            {
+                "id": "472",
+                "name": "BASSA"
+            },
+            {
+                "id": "473",
+                "name": "DEKINA"
+            },
+            {
+                "id": "474",
+                "name": "IBAJI"
+            },
+            {
+                "id": "475",
+                "name": "IDAH"
+            },
+            {
+                "id": "476",
+                "name": "IGALAMELA\/ODOLU"
+            },
+            {
+                "id": "477",
+                "name": "IJUMU"
+            },
+            {
+                "id": "478",
+                "name": "KABBA\/BUNU"
+            },
+            {
+                "id": "479",
+                "name": "KOGI . K. K."
+            },
+            {
+                "id": "480",
+                "name": "LOKOJA"
+            },
+            {
+                "id": "481",
+                "name": "MOPA MORO"
+            },
+            {
+                "id": "482",
+                "name": "OFU"
+            },
+            {
+                "id": "483",
+                "name": "OGORI MANGOGO"
+            },
+            {
+                "id": "484",
+                "name": "OKEHI"
+            },
+            {
+                "id": "485",
+                "name": "OKENE"
+            },
+            {
+                "id": "486",
+                "name": "OLAMABORO"
+            },
+            {
+                "id": "487",
+                "name": "OMALA"
+            },
+            {
+                "id": "488",
+                "name": "YAGBA EAST"
+            },
+            {
+                "id": "489",
+                "name": "YAGBA WEST"
+            }
+        ],
+        "24": [
+            {
+                "id": "490",
+                "name": "ASA"
+            },
+            {
+                "id": "491",
+                "name": "BARUTEN"
+            },
+            {
+                "id": "492",
+                "name": "EDU"
+            },
+            {
+                "id": "493",
+                "name": "EKITI"
+            },
+            {
+                "id": "494",
+                "name": "IFELODUN"
+            },
+            {
+                "id": "495",
+                "name": "ILORIN EAST"
+            },
+            {
+                "id": "496",
+                "name": "ILORIN-SOUTH"
+            },
+            {
+                "id": "497",
+                "name": "ILORIN-WEST"
+            },
+            {
+                "id": "498",
+                "name": "IREPODUN"
+            },
+            {
+                "id": "499",
+                "name": "ISIN"
+            },
+            {
+                "id": "500",
+                "name": "KAIAMA"
+            },
+            {
+                "id": "501",
+                "name": "MORO"
+            },
+            {
+                "id": "502",
+                "name": "OFFA"
+            },
+            {
+                "id": "503",
+                "name": "OKE - ERO"
+            },
+            {
+                "id": "504",
+                "name": "OYUN"
+            },
+            {
+                "id": "505",
+                "name": "PATIGI"
+            }
+        ],
+        "25": [
+            {
+                "id": "506",
+                "name": "AGEGE"
+            },
+            {
+                "id": "507",
+                "name": "AJEROMI\/IFELODUN"
+            },
+            {
+                "id": "508",
+                "name": "ALIMOSHO"
+            },
+            {
+                "id": "509",
+                "name": "AMUWO-ODOFIN"
+            },
+            {
+                "id": "510",
+                "name": "APAPA"
+            },
+            {
+                "id": "511",
+                "name": "BADAGRY"
+            },
+            {
+                "id": "512",
+                "name": "EPE"
+            },
+            {
+                "id": "513",
+                "name": "ETI-OSA"
+            },
+            {
+                "id": "514",
+                "name": "IBEJU\/LEKKI"
+            },
+            {
+                "id": "515",
+                "name": "IFAKO-IJAYE"
+            },
+            {
+                "id": "516",
+                "name": "IKEJA"
+            },
+            {
+                "id": "517",
+                "name": "IKORODU"
+            },
+            {
+                "id": "518",
+                "name": "KOSOFE"
+            },
+            {
+                "id": "519",
+                "name": "LAGOS ISLAND"
+            },
+            {
+                "id": "520",
+                "name": "LAGOS MAINLAND"
+            },
+            {
+                "id": "521",
+                "name": "MUSHIN"
+            },
+            {
+                "id": "522",
+                "name": "OJO"
+            },
+            {
+                "id": "523",
+                "name": "OSHODI\/ISOLO"
+            },
+            {
+                "id": "524",
+                "name": "SOMOLU"
+            },
+            {
+                "id": "525",
+                "name": "SURULERE"
+            }
+        ],
+        "26": [
+            {
+                "id": "526",
+                "name": "AKWANGA"
+            },
+            {
+                "id": "527",
+                "name": "AWE"
+            },
+            {
+                "id": "528",
+                "name": "DOMA"
+            },
+            {
+                "id": "529",
+                "name": "KARU"
+            },
+            {
+                "id": "530",
+                "name": "KEANA"
+            },
+            {
+                "id": "531",
+                "name": "KEFFI"
+            },
+            {
+                "id": "532",
+                "name": "KOKONA"
+            },
+            {
+                "id": "533",
+                "name": "LAFIA"
+            },
+            {
+                "id": "534",
+                "name": "NASARAWA EGGON"
+            },
+            {
+                "id": "535",
+                "name": "TOTO"
+            },
+            {
+                "id": "536",
+                "name": "WAMBA"
+            },
+            {
+                "id": "771",
+                "name": "NASARAWA"
+            },
+            {
+                "id": "774",
+                "name": "OBI"
+            }
+        ],
+        "27": [
+            {
+                "id": "537",
+                "name": "AGAIE"
+            },
+            {
+                "id": "538",
+                "name": "AGWARA"
+            },
+            {
+                "id": "539",
+                "name": "BIDA"
+            },
+            {
+                "id": "540",
+                "name": "BORGU"
+            },
+            {
+                "id": "541",
+                "name": "BOSSO"
+            },
+            {
+                "id": "542",
+                "name": "CHANCHAGA"
+            },
+            {
+                "id": "543",
+                "name": "EDATTI"
+            },
+            {
+                "id": "544",
+                "name": "GBAKO"
+            },
+            {
+                "id": "545",
+                "name": "GURARA"
+            },
+            {
+                "id": "546",
+                "name": "KATCHA"
+            },
+            {
+                "id": "547",
+                "name": "KONTAGORA"
+            },
+            {
+                "id": "548",
+                "name": "LAPAI"
+            },
+            {
+                "id": "549",
+                "name": "LAVUN"
+            },
+            {
+                "id": "550",
+                "name": "MAGAMA"
+            },
+            {
+                "id": "551",
+                "name": "MARIGA"
+            },
+            {
+                "id": "552",
+                "name": "MASHEGU"
+            },
+            {
+                "id": "553",
+                "name": "MOKWA"
+            },
+            {
+                "id": "554",
+                "name": "MUNYA"
+            },
+            {
+                "id": "555",
+                "name": "PAIKORO"
+            },
+            {
+                "id": "556",
+                "name": "RAFI"
+            },
+            {
+                "id": "557",
+                "name": "RIJAU"
+            },
+            {
+                "id": "558",
+                "name": "SHIRORO"
+            },
+            {
+                "id": "559",
+                "name": "SULEJA"
+            },
+            {
+                "id": "560",
+                "name": "TAFA"
+            },
+            {
+                "id": "561",
+                "name": "WUSHISHI"
+            }
+        ],
+        "28": [
+            {
+                "id": "562",
+                "name": "ABEOKUTA NORTH"
+            },
+            {
+                "id": "563",
+                "name": "ABEOKUTA SOUTH"
+            },
+            {
+                "id": "564",
+                "name": "ADO ODO-OTA"
+            },
+            {
+                "id": "565",
+                "name": "EGBADO NORTH"
+            },
+            {
+                "id": "566",
+                "name": "EGBADO SOUTH"
+            },
+            {
+                "id": "567",
+                "name": "EWEKORO"
+            },
+            {
+                "id": "568",
+                "name": "IFO"
+            },
+            {
+                "id": "569",
+                "name": "IJEBU EAST"
+            },
+            {
+                "id": "570",
+                "name": "IJEBU NORTH"
+            },
+            {
+                "id": "571",
+                "name": "IJEBU NORTH EAST"
+            },
+            {
+                "id": "572",
+                "name": "IJEBU ODE"
+            },
+            {
+                "id": "573",
+                "name": "IKENNE"
+            },
+            {
+                "id": "574",
+                "name": "IMEKO\/AFON"
+            },
+            {
+                "id": "575",
+                "name": "IPOKIA"
+            },
+            {
+                "id": "576",
+                "name": "OBAFEMI\/OWODE"
+            },
+            {
+                "id": "577",
+                "name": "ODEDA"
+            },
+            {
+                "id": "578",
+                "name": "ODOGBOLU"
+            },
+            {
+                "id": "579",
+                "name": "OGUN WATER SIDE"
+            },
+            {
+                "id": "580",
+                "name": "REMO NORTH"
+            },
+            {
+                "id": "581",
+                "name": "SAGAMU"
+            }
+        ],
+        "29": [
+            {
+                "id": "582",
+                "name": "AKOKO NORTH EAST"
+            },
+            {
+                "id": "583",
+                "name": "AKOKO NORTH WEST"
+            },
+            {
+                "id": "584",
+                "name": "AKOKO SOUTH EAST"
+            },
+            {
+                "id": "585",
+                "name": "AKOKO SOUTH WEST"
+            },
+            {
+                "id": "586",
+                "name": "AKURE NORTH"
+            },
+            {
+                "id": "587",
+                "name": "AKURE SOUTH"
+            },
+            {
+                "id": "588",
+                "name": "ESE-ODO"
+            },
+            {
+                "id": "589",
+                "name": "IDANRE"
+            },
+            {
+                "id": "590",
+                "name": "IFEDORE"
+            },
+            {
+                "id": "591",
+                "name": "ILAJE"
+            },
+            {
+                "id": "592",
+                "name": "ILEOLUJI\/OKEIGBO"
+            },
+            {
+                "id": "593",
+                "name": "IRELE"
+            },
+            {
+                "id": "594",
+                "name": "ODIGBO"
+            },
+            {
+                "id": "595",
+                "name": "OKITIPUPA"
+            },
+            {
+                "id": "596",
+                "name": "ONDO EAST"
+            },
+            {
+                "id": "597",
+                "name": "ONDO WEST"
+            },
+            {
+                "id": "598",
+                "name": "OSE"
+            },
+            {
+                "id": "599",
+                "name": "OWO"
+            }
+        ],
+        "30": [
+            {
+                "id": "600",
+                "name": "ATAKUMOSA EAST"
+            },
+            {
+                "id": "601",
+                "name": "ATAKUMOSA WEST"
+            },
+            {
+                "id": "602",
+                "name": "AYEDAADE"
+            },
+            {
+                "id": "603",
+                "name": "AYEDIRE"
+            },
+            {
+                "id": "604",
+                "name": "BOLUWADURO"
+            },
+            {
+                "id": "605",
+                "name": "BORIPE"
+            },
+            {
+                "id": "606",
+                "name": "EDE NORTH"
+            },
+            {
+                "id": "607",
+                "name": "EDE SOUTH"
+            },
+            {
+                "id": "608",
+                "name": "EGBEDORE"
+            },
+            {
+                "id": "609",
+                "name": "EJIGBO"
+            },
+            {
+                "id": "610",
+                "name": "IFE CENTRAL"
+            },
+            {
+                "id": "611",
+                "name": "IFEDAYO"
+            },
+            {
+                "id": "612",
+                "name": "IFE EAST"
+            },
+            {
+                "id": "613",
+                "name": "IFE NORTH"
+            },
+            {
+                "id": "614",
+                "name": "IFE SOUTH"
+            },
+            {
+                "id": "615",
+                "name": "ILA"
+            },
+            {
+                "id": "616",
+                "name": "ILESA EAST"
+            },
+            {
+                "id": "617",
+                "name": "ILESA WEST"
+            },
+            {
+                "id": "618",
+                "name": "IREWOLE"
+            },
+            {
+                "id": "619",
+                "name": "ISOKAN"
+            },
+            {
+                "id": "620",
+                "name": "IWO"
+            },
+            {
+                "id": "621",
+                "name": "OBOKUN"
+            },
+            {
+                "id": "622",
+                "name": "ODO-OTIN"
+            },
+            {
+                "id": "623",
+                "name": "OLA-OLUWA"
+            },
+            {
+                "id": "624",
+                "name": "OLORUNDA"
+            },
+            {
+                "id": "625",
+                "name": "ORIADE"
+            },
+            {
+                "id": "626",
+                "name": "OROLU"
+            },
+            {
+                "id": "627",
+                "name": "OSOGBO"
+            },
+            {
+                "id": "770",
+                "name": "IREPODUN"
+            },
+            {
+                "id": "772",
+                "name": "IFELODUN"
+            }
+        ],
+        "31": [
+            {
+                "id": "628",
+                "name": "AFIJIO"
+            },
+            {
+                "id": "629",
+                "name": "AKINYELE"
+            },
+            {
+                "id": "630",
+                "name": "ATIBA"
+            },
+            {
+                "id": "631",
+                "name": "ATISBO"
+            },
+            {
+                "id": "632",
+                "name": "EGBEDA"
+            },
+            {
+                "id": "633",
+                "name": "IBADAN NORTH"
+            },
+            {
+                "id": "634",
+                "name": "IBADAN NORTH EAST"
+            },
+            {
+                "id": "635",
+                "name": "IBADAN NORTH WEST"
+            },
+            {
+                "id": "636",
+                "name": "IBADAN SOUTH-EAST"
+            },
+            {
+                "id": "637",
+                "name": "IBADAN SOUTH WEST"
+            },
+            {
+                "id": "638",
+                "name": "IBARAPA CENTRAL"
+            },
+            {
+                "id": "639",
+                "name": "IBARAPA EAST"
+            },
+            {
+                "id": "640",
+                "name": "IBARAPA NORTH"
+            },
+            {
+                "id": "641",
+                "name": "IDO"
+            },
+            {
+                "id": "642",
+                "name": "IREPO"
+            },
+            {
+                "id": "643",
+                "name": "ISEYIN"
+            },
+            {
+                "id": "644",
+                "name": "ITESIWAJU"
+            },
+            {
+                "id": "645",
+                "name": "IWAJOWA"
+            },
+            {
+                "id": "646",
+                "name": "KAJOLA"
+            },
+            {
+                "id": "647",
+                "name": "LAGELU"
+            },
+            {
+                "id": "648",
+                "name": "OGBOMOSO NORTH"
+            },
+            {
+                "id": "649",
+                "name": "OGBOMOSO SOUTH"
+            },
+            {
+                "id": "650",
+                "name": "OGO-OLUWA"
+            },
+            {
+                "id": "651",
+                "name": "OLORUNSOGO"
+            },
+            {
+                "id": "652",
+                "name": "OLUYOLE"
+            },
+            {
+                "id": "653",
+                "name": "ONA-ARA"
+            },
+            {
+                "id": "654",
+                "name": "OORELOPE"
+            },
+            {
+                "id": "655",
+                "name": "ORI IRE"
+            },
+            {
+                "id": "656",
+                "name": "OYO EAST"
+            },
+            {
+                "id": "657",
+                "name": "OYO WEST"
+            },
+            {
+                "id": "658",
+                "name": "SAKI EAST"
+            },
+            {
+                "id": "659",
+                "name": "SAKI WEST"
+            },
+            {
+                "id": "773",
+                "name": "SURULERE"
+            }
+        ],
+        "32": [
+            {
+                "id": "660",
+                "name": "BARIKIN LADI"
+            },
+            {
+                "id": "661",
+                "name": "BOKKOS"
+            },
+            {
+                "id": "662",
+                "name": "JOS EAST"
+            },
+            {
+                "id": "663",
+                "name": "JOS NORTH"
+            },
+            {
+                "id": "664",
+                "name": "JOS SOUTH"
+            },
+            {
+                "id": "665",
+                "name": "KANAM"
+            },
+            {
+                "id": "666",
+                "name": "KANKE"
+            },
+            {
+                "id": "667",
+                "name": "LANGTANG NORTH"
+            },
+            {
+                "id": "668",
+                "name": "LANGTANG SOUTH"
+            },
+            {
+                "id": "669",
+                "name": "MANGU"
+            },
+            {
+                "id": "670",
+                "name": "MIKANG"
+            },
+            {
+                "id": "671",
+                "name": "PANKSHIN"
+            },
+            {
+                "id": "672",
+                "name": "QUA'AN PAN"
+            },
+            {
+                "id": "673",
+                "name": "RIYOM"
+            },
+            {
+                "id": "674",
+                "name": "SHENDAM"
+            },
+            {
+                "id": "675",
+                "name": "WASE"
+            },
+            {
+                "id": "769",
+                "name": "BASSA"
+            }
+        ],
+        "33": [
+            {
+                "id": "676",
+                "name": "ABUA-ODUAL"
+            },
+            {
+                "id": "677",
+                "name": "AHOADA EAST"
+            },
+            {
+                "id": "678",
+                "name": "AHOADA WEST"
+            },
+            {
+                "id": "679",
+                "name": "AKUKU TORU"
+            },
+            {
+                "id": "680",
+                "name": "ANDONI"
+            },
+            {
+                "id": "681",
+                "name": "ASARI-TORU"
+            },
+            {
+                "id": "682",
+                "name": "BONNY"
+            },
+            {
+                "id": "683",
+                "name": "DEGEMA"
+            },
+            {
+                "id": "684",
+                "name": "ELEME"
+            },
+            {
+                "id": "685",
+                "name": "EMOHUA"
+            },
+            {
+                "id": "686",
+                "name": "ETCHE"
+            },
+            {
+                "id": "687",
+                "name": "GOKANA"
+            },
+            {
+                "id": "688",
+                "name": "IKWERRE"
+            },
+            {
+                "id": "689",
+                "name": "KHANA"
+            },
+            {
+                "id": "690",
+                "name": "OBIO\/AKPOR"
+            },
+            {
+                "id": "691",
+                "name": "OGBA\/EGBEMA\/NDONI"
+            },
+            {
+                "id": "692",
+                "name": "OGU\/BOLO"
+            },
+            {
+                "id": "693",
+                "name": "OKRIKA"
+            },
+            {
+                "id": "694",
+                "name": "OMUMA"
+            },
+            {
+                "id": "695",
+                "name": "OPOBO\/NKORO"
+            },
+            {
+                "id": "696",
+                "name": "OYIGBO"
+            },
+            {
+                "id": "697",
+                "name": "PORT HARCOURT"
+            },
+            {
+                "id": "698",
+                "name": "TAI"
+            }
+        ],
+        "34": [
+            {
+                "id": "699",
+                "name": "BINJI"
+            },
+            {
+                "id": "700",
+                "name": "BODINGA"
+            },
+            {
+                "id": "701",
+                "name": "DANGE\/SHUNI"
+            },
+            {
+                "id": "702",
+                "name": "GADA"
+            },
+            {
+                "id": "703",
+                "name": "GORONYO"
+            },
+            {
+                "id": "704",
+                "name": "GUDU"
+            },
+            {
+                "id": "705",
+                "name": "GWADABAWA"
+            },
+            {
+                "id": "706",
+                "name": "ILLELA"
+            },
+            {
+                "id": "707",
+                "name": "ISA"
+            },
+            {
+                "id": "708",
+                "name": "KWARE"
+            },
+            {
+                "id": "709",
+                "name": "KEBBE"
+            },
+            {
+                "id": "710",
+                "name": "RABAH"
+            },
+            {
+                "id": "711",
+                "name": "S\/BIRNI"
+            },
+            {
+                "id": "712",
+                "name": "SHAGARI"
+            },
+            {
+                "id": "713",
+                "name": "SILAME"
+            },
+            {
+                "id": "714",
+                "name": "SOKOTO NORTH"
+            },
+            {
+                "id": "715",
+                "name": "SOKOTO SOUTH"
+            },
+            {
+                "id": "716",
+                "name": "TAMBUWAL"
+            },
+            {
+                "id": "717",
+                "name": "TANGAZA"
+            },
+            {
+                "id": "718",
+                "name": "TURETA"
+            },
+            {
+                "id": "719",
+                "name": "WAMAKKO"
+            },
+            {
+                "id": "720",
+                "name": "WURNO"
+            },
+            {
+                "id": "721",
+                "name": "YABO"
+            }
+        ],
+        "35": [
+            {
+                "id": "722",
+                "name": "ARDO - KOLA"
+            },
+            {
+                "id": "723",
+                "name": "BALI"
+            },
+            {
+                "id": "724",
+                "name": "DONGA"
+            },
+            {
+                "id": "725",
+                "name": "GASHAKA"
+            },
+            {
+                "id": "726",
+                "name": "GASSOL"
+            },
+            {
+                "id": "727",
+                "name": "IBI"
+            },
+            {
+                "id": "728",
+                "name": "JALINGO"
+            },
+            {
+                "id": "729",
+                "name": "KARIM-LAMIDO"
+            },
+            {
+                "id": "730",
+                "name": "KURMI"
+            },
+            {
+                "id": "731",
+                "name": "LAU"
+            },
+            {
+                "id": "732",
+                "name": "SARDAUNA"
+            },
+            {
+                "id": "733",
+                "name": "TAKUM"
+            },
+            {
+                "id": "734",
+                "name": "USSA"
+            },
+            {
+                "id": "735",
+                "name": "WUKARI"
+            },
+            {
+                "id": "736",
+                "name": "YORRO"
+            },
+            {
+                "id": "737",
+                "name": "ZING"
+            }
+        ],
+        "36": [
+            {
+                "id": "738",
+                "name": "BADE"
+            },
+            {
+                "id": "739",
+                "name": "BURSARI"
+            },
+            {
+                "id": "740",
+                "name": "DAMATURU"
+            },
+            {
+                "id": "741",
+                "name": "FIKA"
+            },
+            {
+                "id": "742",
+                "name": "FUNE"
+            },
+            {
+                "id": "743",
+                "name": "GEIDAM"
+            },
+            {
+                "id": "744",
+                "name": "GUJBA"
+            },
+            {
+                "id": "745",
+                "name": "GULANI"
+            },
+            {
+                "id": "746",
+                "name": "JAKUSKO"
+            },
+            {
+                "id": "747",
+                "name": "KARASAWA"
+            },
+            {
+                "id": "748",
+                "name": "MACHINA"
+            },
+            {
+                "id": "749",
+                "name": "NANGERE"
+            },
+            {
+                "id": "750",
+                "name": "NGURU"
+            },
+            {
+                "id": "751",
+                "name": "POTISKUM"
+            },
+            {
+                "id": "752",
+                "name": "TARMUWA"
+            },
+            {
+                "id": "753",
+                "name": "YUNUSARI"
+            },
+            {
+                "id": "754",
+                "name": "YUSUFARI"
+            }
+        ],
+        "37": [
+            {
+                "id": "755",
+                "name": "ANKA"
+            },
+            {
+                "id": "756",
+                "name": "BAKURA"
+            },
+            {
+                "id": "757",
+                "name": "BIRNIN MAGAJI"
+            },
+            {
+                "id": "758",
+                "name": "BUKKUYUM"
+            },
+            {
+                "id": "759",
+                "name": "BUNGUDU"
+            },
+            {
+                "id": "760",
+                "name": "GUMMI"
+            },
+            {
+                "id": "761",
+                "name": "GUSAU"
+            },
+            {
+                "id": "762",
+                "name": "KAURA NAMODA"
+            },
+            {
+                "id": "763",
+                "name": "MARADUN"
+            },
+            {
+                "id": "764",
+                "name": "MARU"
+            },
+            {
+                "id": "765",
+                "name": "SHINKAFI"
+            },
+            {
+                "id": "766",
+                "name": "TALATA MAFARA"
+            },
+            {
+                "id": "767",
+                "name": "TSAFE"
+            },
+            {
+                "id": "768",
+                "name": "ZURMI"
+            }
+        ]
+    },
+    "parties": [
+        {
+            "Acronym": "A",
+            "Name": "Accord Party"
+        },
+        {
+            "Acronym": "AA",
+            "Name": "Action Alliance"
+        },
+        {
+            "Acronym": "AAC",
+            "Name": "African Action Congress"
+        },
+        {
+            "Acronym": "ADC",
+            "Name": "African Democratic Congress"
+        },
+        {
+            "Acronym": "ADP",
+            "Name": "Action Democratic Party"
+        },
+        {
+            "Acronym": "APC",
+            "Name": "All Progressives Congress"
+        },
+        {
+            "Acronym": "APGA",
+            "Name": "All Progressives Grand Alliance"
+        },
+        {
+            "Acronym": "APM",
+            "Name": "Allied Peoples Movement"
+        },
+        {
+            "Acronym": "APP",
+            "Name": "Action Peoples Party"
+        },
+        {
+            "Acronym": "BP",
+            "Name": "Boot Party"
+        },
+        {
+            "Acronym": "LP",
+            "Name": "Labour Party"
+        },
+        {
+            "Acronym": "NNPP",
+            "Name": "New Nigeria Peoples Party"
+        },
+        {
+            "Acronym": "NRM",
+            "Name": "National Rescue Movement"
+        },
+        {
+            "Acronym": "PDP",
+            "Name": "Peoples Democratic Party"
+        },
+        {
+            "Acronym": "PRP",
+            "Name": "Peoples Redemption Party"
+        },
+        {
+            "Acronym": "SDP",
+            "Name": "Social Democratic Party"
+        },
+        {
+            "Acronym": "YPP",
+            "Name": "Young Progressive Party"
+        },
+        {
+            "Acronym": "ZLP",
+            "Name": "Zenith Labour Party"
+        }
+    ],
+    "elections": [
+        {
+            "title": "VoteForPresident",
+            "name": "PRESIDENTIAL ELECTION"
+        },
+        {
+            "title": "VoteForSenate",
+            "name": "SENATORIAL ELECTION"
+        },
+        {
+            "title": "VoteForReps",
+            "name": "HOUSE OF REPS. ELECTION"
+        },
+        {
+            "title": "VoteForGovernor",
+            "name": "GUBERNATORIAL ELECTION"
+        },
+        {
+            "title": "VoteForAssembly",
+            "name": "HOUSE OF ASSEMBLY ELECTION"
+        }
+    ]
+}

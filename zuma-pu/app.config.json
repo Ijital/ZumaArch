@@ -1,0 +1,9 @@
+{
+  "Network": {
+    "Interval": 1000000,
+    "Nodes": [
+      "https://localhost:44315",
+      "https://cvr.inecnigeria.org/vvs"
+    ]
+  }
+}
