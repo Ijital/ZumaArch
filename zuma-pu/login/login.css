@@ -1,0 +1,11 @@
+.login-page{
+
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(21, 19, 19, 0.3);
+    box-shadow: 6px 6px 6px #11010163;
+}
+
+.login-btn input{
+display: block;
+}
+
