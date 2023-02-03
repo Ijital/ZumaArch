@@ -28,7 +28,6 @@ app.on('ready', ()=> {
     });
 });
 
-
 // Handles even when Admin user has logged in
 ipcMain.on('admin-login', () => {
     menuWindow.webContents.send('admin-login');
@@ -37,6 +36,7 @@ ipcMain.on('admin-login', () => {
 
 // Handles event when voter has confirmed an election vote
 ipcMain.on('ballot-submitted', (e, election, partyVoted) => {
+    //console.log(election, partyVoted);
     voteBlock.updateVoteBlock(election, partyVoted);
 });
 

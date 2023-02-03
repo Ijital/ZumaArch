@@ -11,7 +11,7 @@ window.addEventListener("load", e => {
     ballot = document.getElementById('ballot');
 });
 
-// Handles event when voter has selected a Party to vote in a given election
+// Handles event when voter has selected a party to vote for in election on the current ballot
 function handleVoteChoice(party) {
     Swal.fire({
         title: `You have selected ${party.dataset.acronym}`,
@@ -25,9 +25,13 @@ function handleVoteChoice(party) {
     }).then(vote => { if (vote.isConfirmed) { submitBallot(party); } });
 }
 
-//Handles event when user has comfirmed a ballot
+//Handles event when user has comfirmed thier vote in current ballot
 function submitBallot(party) {
-    ipcRenderer.send('ballot-submitted', electionsConfig.elections[electionIndex++].title, party.dataset.acronym);
+    let currentElection = electionsConfig.elections[electionIndex++].title;
+    let partyVotedFor = party.dataset.acronym;
+
+    ipcRenderer.send('ballot-submitted', currentElection, partyVotedFor);
+
     if (electionIndex > 4) {
         ipcRenderer.send('vote-completed');
         window.close();
@@ -35,10 +39,11 @@ function submitBallot(party) {
     loadNextBallot();
 }
 
-// Loads the next ballot for elections on offer
+// Loads a ballot for an election offered on the day
 function loadNextBallot() {
     let electionName = electionsConfig.elections[electionIndex].name;
     document.getElementById("election-title").innerText = `${electionName}`;
+    
     if (electionIndex == 1) {
         ballot.classList.add('ballot-change-transition');
     }

@@ -15,7 +15,7 @@ class AppWindow {
                 contextIsolation: false
             }
         });
-        //window.webContents.openDevTools();
+        window.webContents.openDevTools();
         window.loadFile(`./${template}/${template}.html`);
         window.once('ready-to-show', () => {
             if (template !== 'worker') {
@@ -44,6 +44,7 @@ class VoteBlock {
     }
     updateVoteBlock(election, votedParty) {
         this[election] = votedParty;
+        
     }
     #getVoteBlockDate() {
         var date = new Date();

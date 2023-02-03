@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-function sendVote(url, data) {
+function sendVotes(url, data) {
     return new Promise((resolve, reject) => {
         axios.post(url, data)
             .then(res => {
@@ -13,5 +13,5 @@ function sendVote(url, data) {
 }
 
 module.exports.netService = {
-    publishVote: sendVote
+    sendVotes: sendVotes
 }

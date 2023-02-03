@@ -37,7 +37,7 @@ function closeDatabase() {
 // Creates Votes Table
 function createVotesTable() {
     return new Promise((resolve, reject) => {
-        const sql = `create table Votes ${dbSchema.Votes}`;
+        let sql = `create table Votes ${dbSchema.Votes}`;
         db.run(sql, [], er => {
             er ? reject(er.message) : resolve('Votes Table created');
         });
@@ -46,8 +46,11 @@ function createVotesTable() {
 
 // Adds a new vote to local database
 function insertVote(voteValues) {
+   
     return new Promise((resolve, reject) => {
-        const sql = `insert into Votes ${dbSchema.Votes} Values(?,?,?,?,?,?,?,?,?,?,?,?,?)`;
+        let sql = `insert into Votes ${dbSchema.Votes} Values(?,?,?,?,?,?,?,?,?,?,?,?,?)`;
+        console.log('SQ= ', sql);
+        console.log('VOTE= ', voteValues);
         db.run(sql, voteValues, er => {
             er ? reject(er.message) : resolve('Vote Saved');
         });
@@ -78,6 +81,7 @@ function getElectionReport(election) {
     });
 }
 
+// Checks if a record exists
 function hasVoted(voterId) {
     return new Promise((resolve, reject) => {
         let sql = `select VoterId from Votes where VoterId = ${voterId}`;
