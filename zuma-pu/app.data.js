@@ -2,10 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const electionConfig = require('./election.config.json');
 const path = require('path');
 const dbSchema = {
-    Votes: `(VoterId,VoterPU,VoterAge,VoterGender,VoterOccupation,VoteId,VoteDate,VoteLocation,
-            VoteForPresident,VoteForSenate,VoteForReps,VoteForGovernor,VoteForAssembly)`,
+    Votes: `(VoterId,VoterPU,VoterAge,VoterGender,VoterOccupation,VoteId,VoteDate,VoteLocation,VoteForPresident,VoteForSenate,VoteForReps,VoteForGovernor,VoteForAssembly)`,
     Users: `(Username, Password)`,
-    Issues: `(Summary, Description)`
+    Incidents: `(VoterId, IncidentSummary)`
 }
 
 let db;
@@ -44,18 +43,37 @@ function createVotesTable() {
     });
 }
 
+// Creates Incidents Table
+function createIncidentsTable() {
+    return new Promise((resolve, reject) => {
+        let sql = `create table Incidents ${dbSchema.Incidents}`;
+        db.run(sql, [], er => {
+            er ? reject(er.message) : resolve('Incidents Table created');
+        });
+    });
+}
+
+
 // Adds a new vote to local database
 function insertVote(voteValues) {
-   
     return new Promise((resolve, reject) => {
         let sql = `insert into Votes ${dbSchema.Votes} Values(?,?,?,?,?,?,?,?,?,?,?,?,?)`;
-        console.log('SQ= ', sql);
-        console.log('VOTE= ', voteValues);
         db.run(sql, voteValues, er => {
             er ? reject(er.message) : resolve('Vote Saved');
         });
     });
 }
+
+// Adds a new incident to local database
+function insertIncident(voterId, summary) {
+    return new Promise((resolve, reject) => {
+        let sql = `insert into Incidents ${dbSchema.Incidents} Values(?,?)`;
+        db.run(sql, [voterId, summary], er => {
+            er ? reject(er.message) : resolve('Incident Saved');
+        });
+    });
+}
+
 
 // Gets all votes 
 function getAllVotes() {
@@ -82,7 +100,7 @@ function getElectionReport(election) {
 }
 
 // Checks if a record exists
-function hasVoted(voterId) {
+function voterHasVoted(voterId) {
     return new Promise((resolve, reject) => {
         let sql = `select VoterId from Votes where VoterId = ${voterId}`;
         db.get(sql, [], (er, row) => {
@@ -98,5 +116,9 @@ module.exports.database = {
     report: getElectionReport,
     getVotes: getAllVotes,
     openDatabase: openDatabase,
-    closeDatabase: closeDatabase
+    closeDatabase: closeDatabase,
+    voterHasVoted:voterHasVoted,
+    createIncidentsTable:createIncidentsTable,
+    insertIncident:insertIncident
+    
 }

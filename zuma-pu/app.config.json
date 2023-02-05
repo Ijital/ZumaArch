@@ -1,6 +1,6 @@
 {
-  "Network": {
-    "transmissionInterval": 1000000,
+  "network": {
+    "transmitInterval": 1000000,
     "nodes": [
       "https://localhost:44315",
       "https://cvr.inecnigeria.org/vvs"
