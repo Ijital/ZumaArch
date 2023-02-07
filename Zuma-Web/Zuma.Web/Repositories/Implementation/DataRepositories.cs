@@ -1,45 +1,38 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Data;
 using Zuma.Web.DataAccess;
 
 namespace Zuma.Web.Repositories.Implementation
 {
-    public class DataRepository<DataEntity> : IDataRepository<DataEntity> where DataEntity:class
+    public class DataRepository<DataEntity> : IDataRepository<DataEntity> where DataEntity : class
     {
         private readonly ZumaDBContext _context;
-        private DbSet<DataEntity> _entities;
-
 
         public DataRepository(ZumaDBContext context)
         {
             _context = context;
-            _entities = _context.Set<DataEntity>();
         }
         public async Task<IEnumerable<DataEntity>> GetAllAsync()
         {
-            return await _entities.ToListAsync();
+            return await _context.Set<DataEntity>().ToListAsync();
         }
 
-        public Task<IEnumerable<DataEntity>> GetByFilterAsync(string filter)
+        public async Task<DataEntity> GetByIdAsync(string id)
         {
-            throw new NotImplementedException();
+            return await _context.FindAsync<DataEntity>(id);
         }
 
         public async Task<DataEntity> SaveAsync(DataEntity entity)
         {
-            await _entities.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            await _context.AddAsync<DataEntity>(entity);
             return entity;
         }
 
-        public Task Update(IEnumerable<DataEntity> items)
+        public async Task<DataEntity> UpdateAsync(DataEntity entity)
         {
-            throw new NotImplementedException();
-        }
-
-        Task IDataRepository<DataEntity>.SaveAsync(DataEntity entity)
-        {
-            throw new NotImplementedException();
+            await Task.Run(() => { _context.Update<DataEntity>(entity); });
+            return entity;
         }
     }
 }
+
+

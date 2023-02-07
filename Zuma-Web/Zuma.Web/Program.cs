@@ -10,7 +10,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ZumaDBContext>(options =>
 {
     string dbProvider = builder.Configuration["DatabaseProvider"];
+
     string connString = builder.Configuration.GetConnectionString("Default");
+
     switch (dbProvider)
     {
         case "Sqlite":

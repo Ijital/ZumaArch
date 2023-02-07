@@ -5,7 +5,7 @@
         /// <summary>
         /// Saves an entity object to data storage
         /// </summary> 
-        Task SaveAsync(DataEntity entity);
+        Task<DataEntity> SaveAsync(DataEntity entity);
 
         /// <summary>
         /// Gets all entity records from data storage
@@ -15,16 +15,12 @@
         /// <summary>
         /// Gets Entity records by a filter 
         /// </summary>
-        /// <param name="code"></param>
-        /// <returns></returns>
-        Task<IEnumerable<DataEntity>> GetByFilterAsync(string filter);
+        Task<DataEntity> GetByIdAsync(string id);
 
         /// <summary>
-        /// Removes Blocked votes from pending votes record
+        /// Updates the status of a Vote pack from Pending to blocked B
         /// </summary>
-        /// <param name="vote"></param>
-        /// <returns></returns>
-        Task Update(IEnumerable<DataEntity> items);
+        Task<DataEntity> UpdateAsync(DataEntity item);
     }
 }
 
