@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Zuma.Web.DataAccess;
+using Zuma.Web.Models;
 
 namespace Zuma.Web.Repositories.Implementation
 {
@@ -24,12 +25,14 @@ namespace Zuma.Web.Repositories.Implementation
         public async Task<DataEntity> SaveAsync(DataEntity entity)
         {
             await _context.AddAsync<DataEntity>(entity);
+            _context.SaveChanges();
             return entity;
         }
 
         public async Task<DataEntity> UpdateAsync(DataEntity entity)
         {
             await Task.Run(() => { _context.Update<DataEntity>(entity); });
+            _context.SaveChanges();
             return entity;
         }
     }

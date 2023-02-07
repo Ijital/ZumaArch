@@ -9,19 +9,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ZumaDBContext>(options =>
 {
-    string dbProvider = builder.Configuration["DatabaseProvider"];
-
-    string connString = builder.Configuration.GetConnectionString("Default");
-
-    switch (dbProvider)
-    {
-        case "Sqlite":
-            options.UseSqlite(connString);
-            break;
-        //case "SqlServer":
-        //    options.UseSqlServer(connString);
-        //    break;
-    }
+    options.UseSqlite("Data source=Zuma");
 });
 
 builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));

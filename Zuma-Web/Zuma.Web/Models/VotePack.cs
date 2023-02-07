@@ -2,13 +2,15 @@
 {
     public class VotePack
     {
+        public int Id { get; set; }
+
         public string? VoterId { get; set; }
 
         public string? VoterPU { get; set; }
 
-        public int VoterAge { get; set; }
+        public int? VoterAge { get; set; }
 
-        public char VoterGender { get; set; }
+        public char? VoterGender { get; set; }
 
         public string? VoterOccupation { get; set; }
 
@@ -28,6 +30,6 @@
 
         public string? VoteForAssembly { get; set; }
 
-        public char VoteBlockStatus { get; set; }
+        public char? VoteBlockStatus { get; set; }
     }
 }

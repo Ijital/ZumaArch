@@ -2,6 +2,10 @@ const { ipcRenderer } = require('electron');
 const electionsConfig = require('../election.config.json');
 const Swal = require('sweetalert2');
 
+ var msg = new SpeechSynthesisUtterance();
+ msg.text = "Your vote has now been counted";
+
+
 let electionIndex = 0;
 let ballot;
 
@@ -34,7 +38,20 @@ function submitBallot(party) {
 
     if (electionIndex > 4) {
         ipcRenderer.send('vote-completed');
-        window.close();
+
+        window.speechSynthesis.speak(msg);
+
+        setTimeout(()=>{
+            msg.text = "Good bye";
+            window.speechSynthesis.speak(msg);
+        }, 3000)
+
+
+        setTimeout(()=>{
+            window.close();
+        }, 4500)
+
+       
     }
     loadNextBallot();
 }
