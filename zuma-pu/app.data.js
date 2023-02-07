@@ -111,7 +111,7 @@ function voterHasVoted(voterId) {
 
 // Modules exports
 module.exports.database = {
-    initVotesTable: createVotesTable,
+    createVotesTable: createVotesTable,
     saveVote: insertVote,
     report: getElectionReport,
     getVotes: getAllVotes,
@@ -119,6 +119,5 @@ module.exports.database = {
     closeDatabase: closeDatabase,
     voterHasVoted:voterHasVoted,
     createIncidentsTable:createIncidentsTable,
-    insertIncident:insertIncident
-    
+    insertIncident:insertIncident   
 }

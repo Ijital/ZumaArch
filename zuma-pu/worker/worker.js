@@ -3,7 +3,7 @@ const { netService } = require('../app.network')
 const { ipcRenderer } = require('electron');
 const config = require('../app.config.json');
 
-let voteBlocksCache = [];
+let votePacksCache = [];
 
 //Handles event when worker window is loaded
 window.addEventListener("load", e => {
@@ -13,7 +13,7 @@ window.addEventListener("load", e => {
 // Handles event when voter has completed casting thier vote in every ballot
 ipcRenderer.on('vote-completed', (e, voteBlock) => {
     if (voteBlock) {
-        voteBlocksCache.push(voteBlock);
+        votePacksCache.push(voteBlock);
         database.saveVote(Object.values(voteBlock));
     }
 });
@@ -37,11 +37,11 @@ function reportIncident(voterId) {
 //
 function initialiseAppResources(){
     database.openDatabase();
-    database.initVotesTable();
+    database.createVotesTable();
     database.createIncidentsTable();
     setInterval(() => {
         config.Network.nodes.forEach((node) => {
-            netService.sendVotes(node, voteBlocksCache).then(() => {
+            netService.sendVotePacks(node, votePacksCache).then(() => {
                 // logic to handle vote transmission errors etc, logs etc 
             });
         });

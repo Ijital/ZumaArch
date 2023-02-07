@@ -15,7 +15,7 @@ class AppWindow {
                 contextIsolation: false
             }
         });
-        window.webContents.openDevTools();
+        //window.webContents.openDevTools();
         window.loadFile(`./${template}/${template}.html`);
         window.once('ready-to-show', e => {
             if (template !== 'worker') { window.show(); }
@@ -25,7 +25,7 @@ class AppWindow {
 }
 
 // Encaspulates all elections available to the voter
-class VoteBlock {
+class VotePack {
     constructor(Id, PU, age, gender, occupation) {
         this.VoterId = Id;
         this.VoterPU = PU;
@@ -33,7 +33,7 @@ class VoteBlock {
         this.VoterGender = gender,
         this.VoterOccupation = occupation,
         this.VoteId = uuid.v1();
-        this.VoteDate = this.#getVoteBlockDate();
+        this.VoteDate = this.#getVotePackDate();
         this.VoteLocation = 'Tine Nune';
         this.VoteForPresident = '';
         this.VoteForSenate = '';
@@ -45,13 +45,13 @@ class VoteBlock {
         this[election] = votedParty;
     }
 
-    #getVoteBlockDate() {
+    #getVotePackDate() {
         var date = new Date();
         return `${date.toLocaleDateString()}T${date.toLocaleTimeString()}`;
     }
 }
 
 module.exports = {
-    VoteBlock: VoteBlock,
+    VotePack: VotePack,
     AppWindow: AppWindow,
 };

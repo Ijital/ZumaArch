@@ -1,5 +1,5 @@
 //Required imports
-const { AppWindow, VoteBlock } = require('./app.models');
+const { AppWindow, VotePack } = require('./app.models');
 const { app, ipcMain } = require('electron');
 
 // Application windows
@@ -10,8 +10,8 @@ let reportWindow;
 let workerWindow;
 let voterAuthWindow;
 
-// Current Vote block being processed
-let voteBlock;
+// Current Vote pack being processed
+let votePack;
 
 // Handles event when application is ready
 app.on('ready', e => {
@@ -33,29 +33,24 @@ ipcMain.on('admin-login', e => {
     menuWindow.webContents.send('admin-login');
 });
 
-
 // Handles event when voter has confirmed an election vote
 ipcMain.on('ballot-submitted', (e, election, partyVoted) => {
-    //console.log(election, partyVoted);
-    voteBlock.updateVoteBlock(election, partyVoted);
+    votePack.setElectionVote(election, partyVoted);
 });
-
 
 // Handles event when voter has submitted all thier e-ballots
 ipcMain.on('vote-completed', e => {
-    workerWindow.webContents.send('vote-completed', voteBlock);
+    workerWindow.webContents.send('vote-completed', votePack);
 });
-
 
 // Handles event when voter portal is selected
 ipcMain.on('voter-portal-selected', e => {
     voterAuthWindow = new AppWindow('authentication', menuWindow);
 });
 
-
 // Handles event when voter has been authenticated and authorised
 ipcMain.on('voter-authorized', (e, id, pu, age, gender, occupation) => {
-    voteBlock = new VoteBlock(id, pu, age, gender, occupation);
+    votePack = new VotePack(id, pu, age, gender, occupation);
     ballotWindow = new AppWindow('ballot', voterAuthWindow);
 });
 

@@ -1,7 +1,5 @@
 const { ipcRenderer } = require('electron');
 const { database } = require('../app.data');
-const { VoteBlock } = require('../app.models');
-const { VoteBlock } = require('../app.models');
 
 // Authenticates a voter
 function authenthicate() {
@@ -13,7 +11,6 @@ function authenthicate() {
         ipcRenderer.send('voter-unauthorized', voter.vin, voter.pu, voter.age, voter.gender, voter.job);
     }
 }
-
 
 // Gets voter information
 function getVoterInfo() {
