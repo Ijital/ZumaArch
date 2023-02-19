@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-icons.css">
@@ -7,25 +8,55 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="./menu.js"></script>
 </head>
+
 <body>
-    <div class="container-fluid main-view">
-        <div class="main-window" style="margin-bottom: 5px;">
-            <div id="brand"> <img src="../assets/img/logo.png" alt=""></div>
-            <div class="menu-bar">
-                <button class="btn btn-secondary menu-btn" onclick="" disabled>Voter Register</button>
-                <button class="btn btn-secondary menu-btn" onclick="" disabled>Incidents</button>
-                <button class="btn btn-secondary menu-btn" onclick="launchReportWindow()" disabled>Election Result</button>
-                <button class="btn btn-secondary menu-btn" onclick="launchVoterWindow()" disabled>Voter Portal</button>
-                <button class="btn btn-secondary menu-btn" onclick="window.close()">
+    <div class="container-fluid">
+        <div id="menu-bar">
+            <div id="menu-bar_brand"> <img src="../assets/img/logo.png" alt=""></div>
+            <div id="menu-bar_options">
+                <button class="btn btn-secondary menu-bar_options_item" onclick="window.close()">
                     <i class="bi bi-x close-icon"></i>
                 </button>
+            </div>
+        </div>
+        <div class="voter container overflow-hidden text-center">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="row national">
+                        <div class="col" onclick="launchVoterWindow()">
+                            <button type="button" disabled><img src="../assets/img/ballotbox.jpg" width="160px"><h6>e-Ballot Box</h6></button>
+                        </div>
+                        <div class="col" onclick="launchReportWindow()">
+                            <button type="button" disabled> ELECTION RESULTS</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" disabled>INCIDENTS REPORTS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="row state">
+                        <div class="col">
+                            <button type="button" disabled>SETTINGS</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" disabled>SETTINGS</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" disabled>SETTINGS</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer class="footer">
         <p>Zuma Electronic Voting System<br>
-            <a href="mailto:hege@example.com">www.ijital.com</a>
+            <a href="mailto:hege@example.com">admin.ijital.com</a>
         </p>
     </footer>
 </body>
+
 </html>

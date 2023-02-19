@@ -9,93 +9,9 @@
     <script src="../assets/js/fontawesome.js"></script>
     <script src="./ballot.js"></script>
 </head>
-
 <body>
-    <div id="ballot" class="voter container overflow-hidden text-center">  
+    <div id="ballot" class="voter container overflow-hidden text-center">
         <h1 class="animate__animated animate__heartBeat" id="election-title"></h1>
-        <!-- Parties -->
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="row">
-                    <div class="col">
-                        <img src="../assets/img/Parties/A.jpg" data-acronym="A" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/AA.jpg" data-acronym="AA" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/AAC.jpg" data-acronym="AAC" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/ADC.jpg" data-acronym="ADC" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/ADP.jpg" data-acronym="ADP" onclick="handleVoteChoice(this)">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="row">
-                    <div class="col">
-                        <img src="../assets/img/Parties/APC.jpg" data-acronym="APC" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/APGA.jpg" data-acronym="APGA" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/APM.jpg" data-acronym="APM" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/APP.jpg" data-acronym="APP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/BP.jpg" data-acronym="BP" onclick="handleVoteChoice(this)">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="row">
-                    <div class="col">
-                        <img src="../assets/img/Parties/LP.jpg" data-acronym="LP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/NNPP.jpg" data-acronym="NNPP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/NRM.jpg" data-acronym="NRM" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/PDP.jpg" data-acronym="PDP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/PRP.jpg" data-acronym="PRP" onclick="handleVoteChoice(this)">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="row">
-                    <div class="col">
-                        <img src="../assets/img/Parties/SDP.jpg" data-acronym="SDP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/YPP.jpg" data-acronym="YPP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/ZLP.jpg" data-acronym="ZLP" onclick="handleVoteChoice(this)">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/img/Parties/white.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="row" id="ballot-template"></div>
 </body>
-
 </html>

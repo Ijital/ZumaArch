@@ -10,7 +10,7 @@ let reportWindow;
 let workerWindow;
 let voterAuthWindow;
 
-// Current Vote pack being processed
+// Vote pack being processed for the current voter
 let votePack;
 
 // Handles event when application is ready
@@ -33,30 +33,32 @@ ipcMain.on('admin-login', e => {
     menuWindow.webContents.send('admin-login');
 });
 
-// Handles event when voter has confirmed an election vote
-ipcMain.on('ballot-submitted', (e, election, partyVoted) => {
-    votePack.setElectionVote(election, partyVoted);
-});
-
-// Handles event when voter has submitted all thier e-ballots
-ipcMain.on('vote-completed', e => {
-    workerWindow.webContents.send('vote-completed', votePack);
-});
-
 // Handles event when voter portal is selected
 ipcMain.on('voter-portal-selected', e => {
     voterAuthWindow = new AppWindow('authentication', menuWindow);
 });
 
-// Handles event when voter has been authenticated and authorised
+// Handles event when voter has been authorised
 ipcMain.on('voter-authorized', (e, id, pu, age, gender, occupation) => {
     votePack = new VotePack(id, pu, age, gender, occupation);
     ballotWindow = new AppWindow('ballot', voterAuthWindow);
 });
 
 // Handles event when a voter has not been authorised
-ipcMain.on('voter-unauthorized', (e, id, pu, age, gender, occupation) => {
+ipcMain.on('voter-unauthorized', (e, id) => {
     workerWindow.webContents.send('voter-unauthorized', id);
+});
+
+// Handles event when voter has confirmed thier vote on a ballot
+ipcMain.on('ballot-vote-submitted', (e, election, partyVoted) => {
+    votePack.setBallotVote(election, partyVoted);
+});
+
+// Handles event when voter has submitted all thier ballots
+ipcMain.on('ballot-votes-completed', e => {
+    workerWindow.webContents.send('votepack-completed', votePack);
+    voterAuthWindow.webContents.reloadIgnoringCache();
+    setTimeout(() => ballotWindow.close(), 2000);
 });
 
 // Handles event when election report portal is selected

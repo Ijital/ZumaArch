@@ -1,16 +1,18 @@
 const sqlite3 = require('sqlite3').verbose();
-const electionConfig = require('./election.config.json');
 const path = require('path');
 const dbSchema = {
-    Votes: `(VoterId,VoterPU,VoterAge,VoterGender,VoterOccupation,VoteId,VoteDate,VoteLocation,VoteForPresident,VoteForSenate,VoteForReps,VoteForGovernor,VoteForAssembly)`,
+    Votes: `(Vin,VoterPU,VoterAge,VoterGender,VoterOccupation,VoteDate,
+            VoteLocation,VoteForPresident,VoteForSenate,VoteForReps,VoteForGovernor,VoteForAssembly)`,
     Users: `(Username, Password)`,
     Incidents: `(VoterId, IncidentSummary)`
 }
 
-let db;
-let dbCache;
 let log = console.log;
 
+// initialises the database connection
+const db = new sqlite3.Database(path.resolve(__dirname, 'zuma.db'), sqlite3.OPEN_READWRITE, er => {
+    er ? log(er.message) :log('Database opened');
+});
 
 // Opens connection to in memory database.
 function openDataCache() {
@@ -19,17 +21,20 @@ function openDataCache() {
     });
 }
 
-// Opens connection to local database
-function openDatabase() {
-    db = new sqlite3.Database(path.resolve(__dirname, 'zuma.db'), sqlite3.OPEN_READWRITE, er => {
-        er ? log(er.message) : log('Database opened');
+// Closes connection to local database
+function close() {
+    db.close(er => {
+        er ? log(er.message) : log('Database closed');
     });
 }
 
-// Closes connection to local database
-function closeDatabase() {
-    db.close(er => {
-        er ? log(er.message) : log('Database closed');
+// Checks if a given table already exists
+function tableExist(tableName) {
+    return new Promise((resolve, reject) => {
+        let sql = `select name FROM sqlite_master WHERE type='table'AND name="${tableName}"`;
+        db.get(sql, [], (er, row) => {
+            er ? reject(er.message) : resolve(row ? true : false);
+        });
     });
 }
 
@@ -53,11 +58,10 @@ function createIncidentsTable() {
     });
 }
 
-
 // Adds a new vote to local database
 function insertVote(voteValues) {
     return new Promise((resolve, reject) => {
-        let sql = `insert into Votes ${dbSchema.Votes} Values(?,?,?,?,?,?,?,?,?,?,?,?,?)`;
+        let sql = `insert into Votes ${dbSchema.Votes} Values(?,?,?,?,?,?,?,?,?,?,?,?)`;
         db.run(sql, voteValues, er => {
             er ? reject(er.message) : resolve('Vote Saved');
         });
@@ -76,7 +80,7 @@ function insertIncident(voterId, summary) {
 
 
 // Gets all votes 
-function getAllVotes() {
+function getAllVotePacks() {
     return new Promise((resolve, reject) => {
         let sql = 'select * from Votes';
         db.all(sql, [], (er, rows) => {
@@ -85,39 +89,25 @@ function getAllVotes() {
     });
 }
 
-// Gets the report of a given election at the polling unit
-function getElectionReport(election) {
-    return new Promise((resolve, reject) => {
-        let report = {};
-        electionConfig.elections.forEach((party, index) => {
-            let sql = `select count(*) VoteCount from Votes where ${election} = "${party.Acronym}"`;
-            db.get(sql, [], (er, row) => {
-                er ? reject(er.message) : report[party.Acronym] = row.VoteCount;
-                if (index === config.Parties.length - 1) { resolve(report); }
-            });
-        });
-    });
-}
 
 // Checks if a record exists
-function voterHasVoted(voterId) {
+function voterHasVoted(vin) {
     return new Promise((resolve, reject) => {
-        let sql = `select VoterId from Votes where VoterId = ${voterId}`;
+        let sql = `select Vin from Votes where Vin = ${vin}`;
         db.get(sql, [], (er, row) => {
             er ? reject(er.message) : resolve(row ? true : false);
         });
     });
 }
 
-// Modules exports
+// Module exports
 module.exports.database = {
+    close: close,
     createVotesTable: createVotesTable,
     saveVote: insertVote,
-    report: getElectionReport,
-    getVotes: getAllVotes,
-    openDatabase: openDatabase,
-    closeDatabase: closeDatabase,
-    voterHasVoted:voterHasVoted,
-    createIncidentsTable:createIncidentsTable,
-    insertIncident:insertIncident   
+    getAllVotePacks: getAllVotePacks,
+    voterHasVoted: voterHasVoted,
+    createIncidentsTable: createIncidentsTable,
+    insertIncident: insertIncident,
+    tableExists: tableExist
 }

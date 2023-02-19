@@ -3,21 +3,20 @@
     public class VoteBlock
     {
         #region Properties
+        /// <summary>
+        /// Gets or sets Vote block Id.This is set to the Id of the Vote Pack from which the block is mined
+        /// </summary>
+        public string Id { get; set; }
 
         /// <summary>
-        /// Gets or sets unique Guid of vote block across the network of Nodes
+        /// 
         /// </summary>
-        public string VoteBlockId { get; set; }
-
-        /// <summary>
-        /// Gets or set the block index
-        /// </summary>
-        public int VoteBlockIndex { get; set; }
+        public int VoteBlockLG { get; set; }
 
         /// <summary>
         /// Gets or sets the vote pack in Json format
         /// </summary>
-        public string VotePack { get; set; }
+        public string VotePacks { get; set; }
 
         /// <summary>
         /// Gets or sets the current block`s hash

@@ -1,7 +1,6 @@
-const uuid = require('uuid');
 const { BrowserWindow } = require('electron');
 
-// Encaspulates a window of the application
+// Encaspulates an application UI window
 class AppWindow {
     constructor(template, parentWindow) {
         let window = new BrowserWindow({
@@ -24,24 +23,23 @@ class AppWindow {
     }
 }
 
-// Encaspulates all elections available to the voter
+// Encaspulates all possible elections a voter can vote in
 class VotePack {
-    constructor(Id, PU, age, gender, occupation) {
-        this.VoterId = Id;
+    constructor(vin, PU, age, gender, occupation, location) {
+        this.Vin = vin;
         this.VoterPU = PU;
-        this.VoterAge = age,
+        this.VoterAge = age;
         this.VoterGender = gender,
-        this.VoterOccupation = occupation,
-        this.VoteId = uuid.v1();
+        this.VoterOccupation = occupation;
         this.VoteDate = this.#getVotePackDate();
-        this.VoteLocation = 'Tine Nune';
+        this.VoteLocation = location;
         this.VoteForPresident = '';
         this.VoteForSenate = '';
         this.VoteForReps = '';
         this.VoteForGovernor = '';
         this.VoteForAssembly = '';
     }
-    setElectionVote(election, votedParty) {
+    setBallotVote(election, votedParty) {
         this[election] = votedParty;
     }
 
@@ -51,6 +49,7 @@ class VotePack {
     }
 }
 
+// Module exports
 module.exports = {
     VotePack: VotePack,
     AppWindow: AppWindow,

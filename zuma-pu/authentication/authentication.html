@@ -4,14 +4,26 @@
 <head>
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-icons.css">
-    <link href="./authentication.css">
+    <link rel="stylesheet" href="./authentication.css">
     <script src="./authentication.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>VOTER AUTHENTICATION</h1>
-    <button onclick="authenthicate()" class="btn btn-secondary">Authenticate </button>
+    <div class="container">
+        <div id="screen-sleep" onclick="activateAuthentication()">
+            <h1>2023 GENERAL ELECTIONS</h1>
+            <div id="spin">
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div id="screen-active">
+            <h1>PLEASE INSERT YOUR VOTERS CARD</h1>
+            <button onclick="authenthicate()">Authenticate</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

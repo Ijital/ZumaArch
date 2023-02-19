@@ -3,29 +3,18 @@ body {
 }
 
 
+
 .swal2-confirm:focus{
     box-shadow: none !important;
 }
 
-
-.ballot-change-transition {
-    animation: mymove 2s;
+.col-sm-2 button{
+   margin-bottom: 15px;
 }
 
-
-@keyframes mymove {
-    40% {
-        width: 30%;
-        height: 30%px
-    }
-
-    100% {
-        width: 100%;
-        height: 100%;
-    }
+#ballot-template{
+    background-color: rgba(246, 249, 244, 0.521);
 }
-
-
 
 .modal-backdrop {
     opacity: 0.8 !important;
@@ -40,7 +29,6 @@ body {
 }
 
 #election-title {
-
     margin: 50px;
     font-weight: bolder;
     color: rgb(15, 53, 77);
@@ -61,12 +49,6 @@ body {
     text-align: center;
 }
 
-.col img {
-    width: 75%;
-    padding: 2px;
-    /* height: 60%; */
-    object-fit: cover;
-}
 
 #selected-party-logo {
     height: 150px;

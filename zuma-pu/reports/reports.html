@@ -6,43 +6,24 @@
     <script src="./reports.js"></script>
 </head>
 <body>
-    <div class="voter container overflow-hidden text-center">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="row national">
-                    <div class="col" onclick="getResult('VoteForPresident')">
-                        PRESIDENT
-                    </div>
-                    <div class="col" onclick="getResult('VoteForSenate')">
-                        SENATOR
-                    </div>
-                    <div class="col" onclick="getResult('VoteForReps')">
-                        HOUSE OF REPRESENTIVES
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="row state">
-                    <div class="col" onclick="getResult('VoteForGovernor')">
-                        GOVERNOR
-                    </div>
-                    <div class="col" onclick="getResult('VoteForAssembly')">
-                        HOUSE OF ASSEMBLY
-                    </div>
-                    <div class="col" onclick="getResult('LG ELECTION')">
-                        LOCAL GOVERNMENT
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Party</th>
+                    <th>President</th>
+                    <th>Senate</th>
+                    <th>House of Reps</th>
+                    <th>Governor</th>
+                    <th>State Assembly</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">            
+            </tbody>
+        </table>
     </div>
-
     <footer class="footer">
         <button class="btn btn-secondary" onclick="window.close()">EXIT</button>
     </footer>
 </body>
-
 </html>

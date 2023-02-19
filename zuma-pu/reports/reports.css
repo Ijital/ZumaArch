@@ -3,30 +3,21 @@ body {
     background: linear-gradient(rgba(16, 95, 55, 0.8), rgba(16, 95, 55, 0.8)), url('../assets/img/background-img.png');
 }
 
-.voter {
-    margin-top: 70px;
+.table{
+    text-align: center;
+    background-color: white;
+    /* background-image: url('../assets/img/coatarms.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
-.col {
-    font-family: fantasy;
-    font-weight: bolder;
-    font-size: 20px;
-    height: 200px;
-    background-color: aliceblue !important;
-    margin: 10px;
-    padding: 70px 0;
-    box-shadow: 6px 6px 6px #11010163;
-    border-radius: 3%;
-    color: #4d3c81;
-    transition: color 15s;
+img{
+    margin-right: 10px;
+    float: left !important;
 }
 
-.col:hover {
-    color: rgb(6, 54, 110);
-}
-
-.state {
-    margin-top: 80px;
+#table-body{
+    font-size: 15px;
 }
 
 

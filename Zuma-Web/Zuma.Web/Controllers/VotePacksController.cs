@@ -1,26 +1,44 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Zuma.Web.Models;
-using Zuma.Web.Repositories.Implementation;
-
-namespace Zuma.Web.Controllers
+﻿namespace Zuma.Web.Controllers
 {
+    #region Usings
+    using Microsoft.AspNetCore.Mvc;
+    using Zuma.Web.Models;
+    using Zuma.Web.Services.Interface;
+    #endregion
+
     [Route("api/[controller]")]
     [ApiController]
     public class VotePacksController : ControllerBase
     {
-        private readonly IDataRepository<VotePack> _votePacks;
+        private readonly IVotePackService _voteService;
 
-        public VotePacksController(IDataRepository<VotePack> repository)
+        public VotePacksController(IVotePackService votePackRepo)
         {
-            _votePacks = repository;
+            _voteService = votePackRepo;
         }
 
         // GET: api/VotePacks
         [HttpGet]
-        public async Task<IEnumerable<VotePack>> GetVotePacks()
+        public async Task<ActionResult<IEnumerable<VotePack>>> GetVotePacks()
         {
-            return await _votePacks.GetAllAsync();
+            return Ok(await _voteService.GetVotePacksAsync());
         }
+
+        //POST: api/VotePacks
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<string>>> SaveVotePacks(IEnumerable<VotePack> votePacks)
+        {
+           return Ok( await _voteService.SaveVotePacksAsync(votePacks));
+        }
+   
+        //POST: api/VotePacks
+        [HttpPost]
+        //The endpoint will be used by the INEC to broadcast a list of votePacks intended to be block
+        public async Task<ActionResult<IEnumerable<string>>> MineVotePacks(string blockId, int voteLga, IEnumerable<string> votePacksIds)
+        {
+            return Ok(_voteService.MineVotePacksAsync(blockId, voteLga, votePacksIds));
+        }
+
 
         //// GET: api/VotePacks/5
         //[HttpGet("{id}")]
@@ -36,67 +54,5 @@ namespace Zuma.Web.Controllers
         //    return votePack;
         //}
 
-        //// PUT: api/VotePacks/5
-        //// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutVotePack(int id, VotePack votePack)
-        //{
-        //    if (id != votePack.Id)
-        //    {
-        //        return BadRequest();
-        //    }
-
-        //    _context.Entry(votePack).State = EntityState.Modified;
-
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!VotePackExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
-
-        //    return NoContent();
-        //}
-
-        //// POST: api/VotePacks
-        //// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPost]
-        //public async Task<ActionResult<VotePack>> PostVotePack(VotePack votePack)
-        //{
-        //    _context.VotePacks.Add(votePack);
-        //    await _context.SaveChangesAsync();
-
-        //    return CreatedAtAction("GetVotePack", new { id = votePack.Id }, votePack);
-        //}
-
-        //// DELETE: api/VotePacks/5
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteVotePack(int id)
-        //{
-        //    var votePack = await _context.VotePacks.FindAsync(id);
-        //    if (votePack == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    _context.VotePacks.Remove(votePack);
-        //    await _context.SaveChangesAsync();
-
-        //    return NoContent();
-        //}
-
-        //private bool VotePackExists(int id)
-        //{
-        //    return _context.VotePacks.Any(e => e.Id == id);
-        //}
     }
 }

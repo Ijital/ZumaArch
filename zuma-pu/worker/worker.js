@@ -7,36 +7,29 @@ let votePacksCache = [];
 
 //Handles event when worker window is loaded
 window.addEventListener("load", e => {
-   initialiseAppResources();
+    initialiseAppResources();
 });
 
 // Handles event when voter has completed casting thier vote in every ballot
-ipcRenderer.on('vote-completed', (e, voteBlock) => {
-    if (voteBlock) {
-        votePacksCache.push(voteBlock);
-        database.saveVote(Object.values(voteBlock));
+ipcRenderer.on('votepack-completed', (e, votePack) => {
+    if (votePack) {
+        votePacksCache.push(votePack);
+        database.saveVote(Object.values(votePack));
     }
 });
 
 // Handles event when application is about to quit
 ipcRenderer.on('app-ready-to-quit', e => {
-    database.closeDatabase();
+    database.close();
 });
 
 // Handles event voter has not been authorise
 ipcRenderer.on('voter-unauthorized', (e, voterId) => {
-    reportIncident(voterId);
+    database.insertIncident(voterId);
 })
 
-
-// Reports Incident
-function reportIncident(voterId) {
-    database.insertIncident(voterId);
-}
-
 //
-function initialiseAppResources(){
-    database.openDatabase();
+function initialiseAppResources() {
     database.createVotesTable();
     database.createIncidentsTable();
     setInterval(() => {
