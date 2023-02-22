@@ -1,15 +1,13 @@
-﻿using System.Security.Cryptography;
-using System.Text;
-
-namespace Zuma.Web.Helpers
+﻿namespace Zuma.Web.Helpers
 {
+    using System.Security.Cryptography;
+    using System.Text;
+
     public static class HashHelper
     {
         /// <summary>
         /// Gets the hash of specified data
         /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
         public static string GetHash(string data)
         {
             using var sha256Hash = SHA256.Create();

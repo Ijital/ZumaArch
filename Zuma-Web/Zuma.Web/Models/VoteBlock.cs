@@ -4,7 +4,7 @@
     {
         #region Properties
         /// <summary>
-        /// Gets or sets Vote block Id.This is set to the Id of the Vote Pack from which the block is mined
+        /// Gets or sets Vote block Id.This is assinged the Vin of the Vote Pack from which the block is mined
         /// </summary>
         public string Id { get; set; }
 

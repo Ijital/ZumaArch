@@ -13,21 +13,23 @@ namespace Zuma.Web.Repositories.Implementation
             _context = context;
         }
 
-        // The action allows for a litl of vote packs to be recieved in
-        // order to reduce the number of network post request made frm 
-        // the polling units
+        // The method allows for multiple data entities to be recieved and saved in one request
+        // limiting the depency on the internet by e.g  the polling unit in transmitting votes
+        // the polling units can should only transmit votes in batches of 100
         public async Task SaveAllAsync(IEnumerable<DataEntity> entities)
         {
             await _context.Set<DataEntity>().AddRangeAsync(entities);
             _context.SaveChanges();
         }
 
+        // 
         public async Task<IEnumerable<DataEntity>> GetAllAsync()
         {
             return await _context.Set<DataEntity>().ToListAsync();
         }
 
         // Better this way than having to fetch the entire data set and fitering
+        // The database records (Votes) would be indexed by 
         public async Task<IEnumerable<DataEntity>> GetEntitiesAsync(IEnumerable<string> entityIds)
         {
             List<DataEntity> items = new List<DataEntity>();
@@ -37,7 +39,6 @@ namespace Zuma.Web.Repositories.Implementation
             }
             return items;
         }
-
 
 
         public async Task RemoveEntitiesAsync(IEnumerable<DataEntity> entities)

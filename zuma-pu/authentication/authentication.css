@@ -1,28 +1,28 @@
-body{
-    background-color: rgb(13, 69, 69);
+body {
+	background-color: rgb(13, 69, 69);
 }
 
-#screen-active{
+#screen-active {
 	display: none;
 	color: black;
 }
- 
-#screen-sleep{
+
+#screen-sleep {
 	color: white;
 }
 
-.container{
-    text-align: center;
-    padding-top: 30px;
+.container {
+	text-align: center;
+	padding-top: 30px;
 }
 
 #spin {
-	perspective: 500px;	
+	perspective: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 70vh;
-   
+
 }
 
 .square {
@@ -31,10 +31,22 @@ body{
 	background: rgb(239, 231, 231);
 	transform: rotateY(45deg);
 	animation: rotateAnimation 2s linear infinite;
-    box-shadow: 2px 2px 5px rgb(44, 42, 42);
+	box-shadow: 2px 2px 5px rgb(44, 42, 42);
 }
 
 @keyframes rotateAnimation {
-	from {transform: rotateY(45deg);}
-	to {transform: rotateY(225deg);}
+	from {
+		transform: rotateY(45deg);
+	}
+
+	to {
+		transform: rotateY(225deg);
+	}
+}
+
+h1 {
+	margin: 15px;
+	font-weight: bolder;
+	color: rgb(16, 87, 131);
+	text-shadow: 0 0 2px #415345;
 }

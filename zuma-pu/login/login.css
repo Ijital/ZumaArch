@@ -8,3 +8,12 @@
 .login-btn input {
     display: block;
 }
+
+#login-form-logo {
+    text-align: center;
+}
+
+#login-form-logo img {
+    width: 42%;
+    margin-bottom: 15px;
+}

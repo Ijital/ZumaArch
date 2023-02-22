@@ -3,7 +3,8 @@ const { netService } = require('../app.network')
 const { ipcRenderer } = require('electron');
 const config = require('../app.config.json');
 
-let votePacksCache = [];
+let pendingVotePacks = [];
+let queuedPendingVotePacks = [];
 
 //Handles event when worker window is loaded
 window.addEventListener("load", e => {
@@ -13,7 +14,7 @@ window.addEventListener("load", e => {
 // Handles event when voter has completed casting thier vote in every ballot
 ipcRenderer.on('votepack-completed', (e, votePack) => {
     if (votePack) {
-        votePacksCache.push(votePack);
+        pendingVotePacks.push(votePack);
         database.saveVote(Object.values(votePack));
     }
 });
@@ -28,15 +29,18 @@ ipcRenderer.on('voter-unauthorized', (e, voterId) => {
     database.insertIncident(voterId);
 })
 
-//
+//Initiates Application resources
 function initialiseAppResources() {
     database.createVotesTable();
     database.createIncidentsTable();
-    setInterval(() => {
-        config.Network.nodes.forEach((node) => {
-            netService.sendVotePacks(node, votePacksCache).then(() => {
-                // logic to handle vote transmission errors etc, logs etc 
-            });
-        });
-    }, config.network.transmitInterval);
+    setInterval(() => transmitVotePacks(), config.network.transmitInterval);
+}
+
+// Transmit votes to block chain nodes
+function transmitVotePacks() {
+    if (pendingVotePacks.length > 1) {
+        queuedPendingVotePacks = pendingVotePacks;
+        pendingVotePacks = [];  
+    }
+    netService.sendVotePacks(JSON.stringify(queuedPendingVotePacks));
 }

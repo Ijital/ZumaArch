@@ -2,7 +2,18 @@ body {
     padding: 1px;
 }
 
+div.col-sm-12.ballot-vote{
+    text-align: left;
+    margin-bottom: 10px;
+}
 
+button.btn{
+    border: ridge;
+    border-color: #e1eae3c1 !important;
+}
+.print-ballot-header{
+    color: #0c4f1b
+}
 
 .swal2-confirm:focus{
     box-shadow: none !important;
@@ -13,7 +24,7 @@ body {
 }
 
 #ballot-template{
-    background-color: rgba(246, 249, 244, 0.521);
+    /* background-color: rgba(246, 249, 244, 0.521); */
 }
 
 .modal-backdrop {
@@ -29,9 +40,9 @@ body {
 }
 
 #election-title {
-    margin: 50px;
+    margin-bottom: 50px;
     font-weight: bolder;
-    color: rgb(15, 53, 77);
+    color: rgb(16, 87, 131);
     text-shadow: 0 0 2px #415345;
 }
 
@@ -54,12 +65,12 @@ body {
     height: 150px;
 }
 
-#thumb-print-btn {
+/* #thumb-print-btn {
     width: 40%;
     color: rgb(28, 52, 6);
     background-color: white;
     font-size: 100px;
-}
+} */
 
 #selected-party {
     font-weight: bold;

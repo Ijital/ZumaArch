@@ -1,5 +1,5 @@
 //Required imports
-const { AppWindow, VotePack } = require('./app.models');
+const { AppWindow } = require('./app.models');
 const { app, ipcMain } = require('electron');
 
 // Application windows
@@ -11,7 +11,7 @@ let workerWindow;
 let voterAuthWindow;
 
 // Vote pack being processed for the current voter
-let votePack;
+//let votePack;
 
 // Handles event when application is ready
 app.on('ready', e => {
@@ -40,8 +40,10 @@ ipcMain.on('voter-portal-selected', e => {
 
 // Handles event when voter has been authorised
 ipcMain.on('voter-authorized', (e, id, pu, age, gender, occupation) => {
-    votePack = new VotePack(id, pu, age, gender, occupation);
     ballotWindow = new AppWindow('ballot', voterAuthWindow);
+    ballotWindow.webContents.on('did-finish-load', () => {
+        ballotWindow.webContents.send('voter-info-submitted', id, pu, age, gender, occupation);
+    });
 });
 
 // Handles event when a voter has not been authorised
@@ -49,16 +51,11 @@ ipcMain.on('voter-unauthorized', (e, id) => {
     workerWindow.webContents.send('voter-unauthorized', id);
 });
 
-// Handles event when voter has confirmed thier vote on a ballot
-ipcMain.on('ballot-vote-submitted', (e, election, partyVoted) => {
-    votePack.setBallotVote(election, partyVoted);
-});
-
 // Handles event when voter has submitted all thier ballots
-ipcMain.on('ballot-votes-completed', e => {
+ipcMain.on('ballot-votes-completed', (e, votePack) => {
     workerWindow.webContents.send('votepack-completed', votePack);
     voterAuthWindow.webContents.reloadIgnoringCache();
-    setTimeout(() => ballotWindow.close(), 2000);
+    setTimeout(() => ballotWindow.close(), 10000);
 });
 
 // Handles event when election report portal is selected

@@ -1,17 +1,19 @@
 const axios = require('axios');
+const config = require('./app.config.json');
 
-function sendVotePacks(url, data) {
-    return new Promise((resolve, reject) => {
-        axios.post(url, data)
-            .then(res => {
-                resolve(`statusCode: ${res.statusCode}`)
-            })
-            .catch(error => {
-                reject(error);
-            })
+
+//Broadcasts vote to multiple nodes in the block chain network
+// What is the protocol for when some nodes have not responded/ recieved a transmission
+function transmitPendingVotePacks(data) {
+    config.network.nodes.forEach((node) => {
+        axios.post(node, data).then(res => {
+            console.log(res);
+        }).catch(err => {
+            console.log(err);
+        });
     });
 }
 
 module.exports.netService = {
-    sendVotePacks: sendVotePacks
+    sendVotePacks: transmitPendingVotePacks
 }
