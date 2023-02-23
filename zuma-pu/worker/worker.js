@@ -33,14 +33,14 @@ ipcRenderer.on('voter-unauthorized', (e, voterId) => {
 function initialiseAppResources() {
     database.createVotesTable();
     database.createIncidentsTable();
-    setInterval(() => transmitVotePacks(), config.network.transmitInterval);
+    setInterval(() => mineVoteBlock(), config.network.transmitInterval);
 }
 
 // Transmit votes to block chain nodes
-function transmitVotePacks() {
+function mineVoteBlock() {
     if (pendingVotePacks.length > 1) {
         queuedPendingVotePacks = pendingVotePacks;
         pendingVotePacks = [];  
     }
-    netService.sendVotePacks(JSON.stringify(queuedPendingVotePacks));
+    netService.transmitVoteBlock(JSON.stringify(queuedPendingVotePacks));
 }

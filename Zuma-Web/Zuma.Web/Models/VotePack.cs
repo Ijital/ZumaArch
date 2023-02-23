@@ -1,11 +1,18 @@
-﻿namespace Zuma.Web.Models
+﻿using Newtonsoft.Json;
+
+namespace Zuma.Web.Models
 {
     public class VotePack
     {
         /// <summary>
-        /// Gets or sets Vote Pack id,assigned the value of voter's Vin
+        /// Gets or sets Vote Pack id, this is assigned the value of voter's Vin
         /// </summary>
         public int Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets Voters unique indentification number
+        /// </summary>
+        public string Vin { get; set; }
 
         /// <summary>
         /// Gets or sets voter's registered Polling Unit
@@ -23,17 +30,17 @@
         public char? VoterGender { get; set; }
 
         /// <summary>
-        /// Gets or sets Voter's occupation
+        /// Gets or sets voter's occupation
         /// </summary>
         public string? VoterOccupation { get; set; }
 
         /// <summary>
-        /// Gets or sets the date time of vote pack creation
+        /// Gets or sets date time when vote pack was cast
         /// </summary>
         public string? VoteDate { get; set; }
 
         /// <summary>
-        /// Gets or set Location where vote pack is cast
+        /// Gets or set Polling Unit where vote pack was cast
         /// </summary>
         public string?  VoteLocation { get; set; }
 
@@ -63,7 +70,7 @@
         public string? VoteForAssembly { get; set; }
 
         /// <summary>
-        /// Gets or sets value indicating of vote pack has been added to the block chain
+        /// Gets or sets value indicating if vote pack has been mined to the block chain
         /// </summary>
         public int VotePackStatus { get; set; }
     }

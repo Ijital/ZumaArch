@@ -4,7 +4,7 @@ const config = require('./app.config.json');
 
 //Broadcasts vote to multiple nodes in the block chain network
 // What is the protocol for when some nodes have not responded/ recieved a transmission
-function transmitPendingVotePacks(data) {
+function transmitVoteBlock(data) {
     config.network.nodes.forEach((node) => {
         axios.post(node, data).then(res => {
             console.log(res);
@@ -15,5 +15,5 @@ function transmitPendingVotePacks(data) {
 }
 
 module.exports.netService = {
-    sendVotePacks: transmitPendingVotePacks
+    transmitVoteBlock: transmitVoteBlock
 }

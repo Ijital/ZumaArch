@@ -9,7 +9,7 @@ div.col-sm-12.ballot-vote{
 
 button.btn{
     border: ridge;
-    border-color: #e1eae3c1 !important;
+     border-color: #e1eae3c1 !important; 
 }
 .print-ballot-header{
     color: #0c4f1b

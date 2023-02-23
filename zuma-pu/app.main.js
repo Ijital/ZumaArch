@@ -10,9 +10,6 @@ let reportWindow;
 let workerWindow;
 let voterAuthWindow;
 
-// Vote pack being processed for the current voter
-//let votePack;
-
 // Handles event when application is ready
 app.on('ready', e => {
     menuWindow = new AppWindow('menu');
@@ -55,7 +52,7 @@ ipcMain.on('voter-unauthorized', (e, id) => {
 ipcMain.on('ballot-votes-completed', (e, votePack) => {
     workerWindow.webContents.send('votepack-completed', votePack);
     voterAuthWindow.webContents.reloadIgnoringCache();
-    setTimeout(() => ballotWindow.close(), 10000);
+    setTimeout(() => ballotWindow.close(), 10100);
 });
 
 // Handles event when election report portal is selected
